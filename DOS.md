@@ -1,5 +1,5 @@
 ---
-title: <span id="_Toc168058604" class="anchor"></span>Designing Online
+title: Designing Online
   Surveys using Limesurvey
 ---
 
