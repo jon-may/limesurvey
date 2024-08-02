@@ -6,127 +6,9 @@ find out how to create an online survey using Limesurvey. This is
 special purpose survey platform with better functionality than the forms
 that are available in Google or Office.
 
-1\. First steps [2](#first-steps)
-
-How to get an Account and Login [2](#how-to-get-an-account-and-login)
-
-Create a new survey [2](#create-a-new-survey)
-
-Structuring your questionnaire [4](#structuring-your-questionnaire)
-
-2\. Add a text-only Information page and Consent question
-[6](#add-a-text-only-information-page-and-consent-question)
-
-Creating a text only question [6](#creating-a-text-only-question)
-
-Previewing [7](#previewing)
-
-Adding Images or Movies [7](#adding-images-or-movies)
-
-Yes/No Questions [8](#yesno-questions)
-
-Customising the appearance of the survey
-[8](#customising-the-appearance-of-the-survey)
-
-3\. Creating questions [10](#creating-questions)
-
-Make a new Group of questions [10](#make-a-new-group-of-questions)
-
-Always Name your questions [10](#always-name-your-questions)
-
-Create a single choice question [10](#create-a-single-choice-question)
-
-Mandatory questions [12](#mandatory-questions)
-
-Asking for a number [12](#asking-for-a-number)
-
-Make this group conditional on consent being given
-[13](#make-this-group-conditional-on-consent-being-given)
-
-Making an individual question conditional on previous answers
-[14](#making-an-individual-question-conditional-on-previous-answers)
-
-Re-ordering questions and groups [14](#re-ordering-questions-and-groups)
-
-Dropdown lists [14](#dropdown-lists)
-
-Buttons [15](#buttons)
-
-Multiple Answer Questions [15](#multiple-answer-questions)
-
-4\. A matrix of items using a Likert rating scale
-[17](#a-matrix-of-items-using-a-likert-rating-scale)
-
-Likert Rating Scale [17](#likert-rating-scale)
-
-Semantic Differential questions [18](#semantic-differential-questions)
-
-Continuous Sliders [19](#continuous-sliders)
-
-Duplicating questions [20](#duplicating-questions)
-
-5\. Randomising items, questions and blocks
-[21](#randomising-items-questions-and-blocks)
-
-Randomising items in a question [21](#randomising-items-in-a-question)
-
-Randomising the order of questions
-[21](#randomising-the-order-of-questions)
-
-Randomising blocks [22](#randomising-blocks)
-
-Randomise participants into conditions
-[22](#randomise-participants-into-conditions)
-
-6\. Branch to different pages depending on participants answers
-[24](#branch-to-different-pages-depending-on-participants-answers)
-
-7\. Pipe answers from one question into a later question
-[25](#pipe-answers-from-one-question-into-a-later-question)
-
-Saving lists of subquestions and answer options for reuse
-[25](#saving-lists-of-subquestions-and-answer-options-for-reuse)
-
-Piping a List question answer [25](#piping-a-list-question-answer)
-
-Piping answers from a multiple choice or array question
-[26](#piping-answers-from-a-multiple-choice-or-array-question)
-
-Piping answers from one question into another
-[27](#piping-answers-from-one-question-into-another)
-
-8\. Redirect to another website or SONA
-[28](#redirect-to-another-website-or-sona)
-
-Using Limesurvey with SONA [28](#using-limesurvey-with-sona)
-
-Using Limesurvey with JATOS and OpenSesame
-[29](#using-limesurvey-with-jatos-and-opensesame)
-
-9\. Running your survey [30](#running-your-survey)
-
-Downloading data [30](#downloading-data)
-
-Sharing your survey with colleagues
-[32](#sharing-your-survey-with-colleagues)
-
-Stopping your survey [33](#stopping-your-survey)
-
-Data handling and security [34](#data-handling-and-security)
-
-Confidentiality [34](#confidentiality)
-
-Chaining to another survey [35](#chaining-to-another-survey)
-
-Deleting Data from the platform [35](#deleting-data-from-the-platform)
-
-Archiving and deleting old surveys
-[35](#archiving-and-deleting-old-surveys)
-
-Appendices [40](#section)
 
 ## First steps
-
+<details><summary>Getting an account and logging in</summary>
 Whenever you are collecting data online, you need to make sure that the
 system you use is GDPR compliant. All survey respondents should be sure
 that their responses are anonymous and confidential, while allowing for
@@ -183,9 +65,10 @@ style="width:3.3105in;height:1.93675in" /></td>
 
 NB: If you are a member of academic staff you will be able to see all
 existing surveys.
+</details>
 
 ### Create a new survey
-
+<details>
 Create a new survey using the purple Create new survey button at the top
 of the window  
 . <img src="./media/image4.png" style="width:0.56944in;height:0.55556in"
@@ -238,9 +121,10 @@ preview and your entry will not be saved anywhere.
 
 Below that is your question. You can also turn off the welcome screen –
 everything in **Limesurvey** can be controlled.
+</details>
 
 ### Structuring your questionnaire
-
+<details>
 Before you plough into creating questions, think about the basic
 sections that every survey will need. Don’t build your survey as one
 huge long screen full of questions. Use separate screens with a few
@@ -295,8 +179,9 @@ guide.
 
 <img src="./media/image10.png" style="width:6.26389in;height:0.92222in"
 alt="A blue rectangle with white text Description automatically generated" />
-
+</details>
 ## Add a text-only Information page and Consent question
+<details>
 
 Every study should start with an information page, where participants
 can give informed consent, or opt out.
@@ -308,9 +193,9 @@ you do , you will see this:
 
 <img src="./media/image11.png" style="width:6.26389in;height:2.10069in"
 alt="A screenshot of a computer Description automatically generated" />
-
+</details>
 ### Creating a text only question
-
+<details>
 First, edit the **Code** box to change the name of the question from Q00
 to InfoText. Then click the green **Long free text** under **Question
 Type**, and from the pop up under **Mask Questions** select **Text
@@ -345,9 +230,10 @@ Previewing is helpful to spot any mistakes you have made in
 understanding the formatting, so you should do it frequently, and
 especially before duplicating questions or sections of your survey (to
 avoid having to correct all of the copies!)
+</details>
 
 ### Adding Images or Movies
-
+<details>
 If you ever need to add an image or movie to a question (or to Text)
 then there are three buttons on the toolbar that allow you to do this.
 They either need to be stored elsewhere on the internet (so you can
@@ -391,9 +277,9 @@ style="width:2.27599in;height:1.49908in" /></th>
 <tbody>
 </tbody>
 </table>
-
+</details>
 ### Yes/No Questions
-
+<details>
 At the bottom of the consent page, you will need to add a single
 question that allows the participant to give their informed consent, or
 not:
@@ -411,7 +297,7 @@ then type the Question text in the large box.
 alt="A screenshot of a computer Description automatically generated" />
 
 Click **Save and Close**, and then **Preview Question**.
-
+</details>
 ### Customising the appearance of the survey
 
 It is not necessary for participants to see the Welcome screen with the
