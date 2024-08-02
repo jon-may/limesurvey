@@ -1,6 +1,4 @@
----
-title: Designing Online
-  Surveys using Limesurvey
+# Designing Online Surveys using Limesurvey
 ---
 
 This worksheet accompanies a workshop, but can be used independently to
