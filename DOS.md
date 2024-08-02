@@ -67,8 +67,7 @@ NB: If you are a member of academic staff you will be able to see all
 existing surveys.
 </details>
 
-### Create a new survey
-<details>
+<details><summary>Create a new survey</summary>
 Create a new survey using the purple Create new survey button at the top
 of the window  
 . <img src="./media/image4.png" style="width:0.56944in;height:0.55556in"
@@ -123,8 +122,8 @@ Below that is your question. You can also turn off the welcome screen –
 everything in **Limesurvey** can be controlled.
 </details>
 
-### Structuring your questionnaire
-<details>
+<details><summary>Structuring your questionnaire</summary>
+
 Before you plough into creating questions, think about the basic
 sections that every survey will need. Don’t build your survey as one
 huge long screen full of questions. Use separate screens with a few
@@ -194,8 +193,8 @@ you do , you will see this:
 <img src="./media/image11.png" style="width:6.26389in;height:2.10069in"
 alt="A screenshot of a computer Description automatically generated" />
 </details>
-### Creating a text only question
-<details>
+<details><summary>Creating a text only question</summary>
+
 First, edit the **Code** box to change the name of the question from Q00
 to InfoText. Then click the green **Long free text** under **Question
 Type**, and from the pop up under **Mask Questions** select **Text
@@ -232,8 +231,8 @@ especially before duplicating questions or sections of your survey (to
 avoid having to correct all of the copies!)
 </details>
 
-### Adding Images or Movies
-<details>
+
+<details><summary>Adding Images or Movies</summary>
 If you ever need to add an image or movie to a question (or to Text)
 then there are three buttons on the toolbar that allow you to do this.
 They either need to be stored elsewhere on the internet (so you can
@@ -298,7 +297,7 @@ alt="A screenshot of a computer Description automatically generated" />
 
 Click **Save and Close**, and then **Preview Question**.
 </details>
-### Customising the appearance of the survey
+<details><summary>Customising the appearance of the survey</summary
 
 It is not necessary for participants to see the Welcome screen with the
 name of your survey. To stop these being shown, click **Settings** and
@@ -324,7 +323,7 @@ Psychology theme you will have to add the logo manually.
 
 <img src="./media/image26.png" style="width:3.87704in;height:1.58407in"
 alt="A group of people with text Description automatically generated" />
-
+</details>
 ## Creating questions
 
 After the consent page, it is common to ask for demographic variables
