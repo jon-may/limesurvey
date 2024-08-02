@@ -179,8 +179,8 @@ guide.
 <img src="./media/image10.png" style="width:6.26389in;height:0.92222in"
 alt="A blue rectangle with white text Description automatically generated" />
 </details>
-## Add a text-only Information page and Consent question
-<details>
+
+<details><summary>## Add a text-only Information page and Consent question</summary>
 
 Every study should start with an information page, where participants
 can give informed consent, or opt out.
