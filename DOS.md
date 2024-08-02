@@ -7,7 +7,7 @@ special purpose survey platform with better functionality than the forms
 that are available in Google or Office.
 
 
-## First steps
+
 <details><summary>Getting an account and logging in</summary>
 Whenever you are collecting data online, you need to make sure that the
 system you use is GDPR compliant. All survey respondents should be sure
