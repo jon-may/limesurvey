@@ -327,8 +327,6 @@ Psychology theme you will have to add the logo manually.
 <img src="./media/image26.png" style="width:3.87704in;height:1.58407in"
 alt="A group of people with text Description automatically generated" />
 </details>
-## Creating questions
-
 <details><summary>Age and Sex</summary>
 After the consent page, it is common to ask for demographic variables
 such as age and sex. It is better to collect these at the start of the
