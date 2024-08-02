@@ -180,7 +180,7 @@ guide.
 alt="A blue rectangle with white text Description automatically generated" />
 </details>
 
-<details><summary>## Add a text-only Information page and Consent question</summary>
+<details><summary>Add a text-only Information page and Consent question</summary>
 
 Every study should start with an information page, where participants
 can give informed consent, or opt out.
@@ -223,7 +223,8 @@ style="width:0.63516in;height:0.33235in" /> button whenever you have
 made changes. Limesurvey does not Autosave, so if you mess things up,
 you can Close and reopen to revert to your previous content.
 
-### Previewing
+</details>
+<details><summary>Previewing</summary>
 
 Previewing is helpful to spot any mistakes you have made in
 understanding the formatting, so you should do it frequently, and
@@ -276,9 +277,11 @@ style="width:2.27599in;height:1.49908in" /></th>
 <tbody>
 </tbody>
 </table>
+
 </details>
-### Yes/No Questions
-<details>
+
+<details><summary>Adding Yes/No Questions</summary>
+
 At the bottom of the consent page, you will need to add a single
 question that allows the participant to give their informed consent, or
 not:
@@ -297,7 +300,7 @@ alt="A screenshot of a computer Description automatically generated" />
 
 Click **Save and Close**, and then **Preview Question**.
 </details>
-<details><summary>Customising the appearance of the survey</summary
+<details><summary>Customising the appearance of the survey</summary>
 
 It is not necessary for participants to see the Welcome screen with the
 name of your survey. To stop these being shown, click **Settings** and
@@ -326,13 +329,15 @@ alt="A group of people with text Description automatically generated" />
 </details>
 ## Creating questions
 
+<details><summary>Age and Sex</summary>
 After the consent page, it is common to ask for demographic variables
 such as age and sex. It is better to collect these at the start of the
 survey, and not at the end, in case people drop out during the survey.
 You can run statistical tests for selective drop out by sex or age
 (etc.) if you collect the information at the start of the survey.
-
-### Make a new Group of questions
+</details>
+<details><summary>
+Make a new Group of questions</summary>
 
 To show these on a new page, click **Add Group**, and give the Group the
 **Title** Demographics. Here is no need to add a **Description**.
@@ -341,8 +346,8 @@ To show these on a new page, click **Add Group**, and give the Group the
 alt="A screenshot of a computer Description automatically generated" />
 
 Click **Save**, and then **Add Question**. Name your new question Sex.
-
-### Always Name your questions
+</details>
+<details><summary>Always Name your questions</summary>
 
 **<u>Naming questions is essential</u>**. These names will be used as
 the columns in your data file, and in using other survey features, so
@@ -351,8 +356,8 @@ punctuation. If you need to use more than one word, or need to add
 numbers, then use an underscore e.g., ‘Scale_Before’ and ‘Scale_After’.
 Using an underscore as a 'delimiter' makes it easy to preprocess the
 data in statistical software such as R or Jamovi.
-
-### Create a single choice question
+</details>
+<details><summary>Create a single choice question</summary>
 
 When you select the **Question Type**, you will see that in **Mask**
 there is a predefined **Gender** question, which you can use later if
@@ -405,7 +410,8 @@ response then on the right hand side, set **Other** to On. Click
 <img src="./media/image33.png" style="width:2.77102in;height:1.93387in"
 alt="A screenshot of a questionnaire Description automatically generated" />
 
-### Mandatory questions
+</details>
+<details><summary>Mandatory questions</summary>
 
 Should you make this question Mandatory? Forcing a response can avoid
 getting missing data if a respondent misses a question by mistake, but
@@ -415,7 +421,8 @@ obtain the data you are asking for and use it sparingly. In this case,
 leave **Mandatory** at Off (in analysis, you can recode missing answers
 as ‘Do not wish to say’)
 
-### Asking for a number
+</details>
+<details><summary>Asking for a number</summary>
 
 Age is more complicated than sex. You would not want to use a question
 with every possible age listed, and you need to collect more exact
@@ -439,7 +446,8 @@ you at your last birthday (whole years)’.
 alt="A screenshot of a phone Description automatically generated" /> |
 |----|----|
 
-### Make this group conditional on consent being given
+</details>
+<details><summary>Make a question group conditional</summary>
 
 <table>
 <colgroup>
@@ -495,7 +503,8 @@ you get the value wrong though – nothing it can do about that.
 When you are writing conditions, do take a moment to check this helpful
 diagnostic information.
 
-### Making an individual question conditional on previous answers
+</details>
+<details><summary>Making an individual question conditional</summary>
 
 Setting a Condition at the Group level means that it applies to all the
 questions in that group. It is easy to change, and most surveys will not
@@ -539,7 +548,8 @@ Being able to make any question’s display conditional on other answers,
 even if they are on the same screen, is a powerful feature of
 Limesurvey.
 
-### Re-ordering questions and groups
+</details>
+<details><summary>Re-ordering questions and groups</summary>
 
 Normally, you would want a conditional question to appear *after the*
 one it depends on, not *before*. You can reorder questions in the
@@ -551,7 +561,8 @@ sensible place.
 You can also re-order Groups by dragging their title up or down, and can
 move questions between groups.
 
-### Dropdown lists
+</details>
+<details><summary>Dropdown lists</summary>
 
 A dropdown list is an alternative way of presenting answer options that
 can be useful when you have a lot of options that would otherwise take
@@ -566,7 +577,8 @@ type from **List (radio)** to **List (dropdown).**
 <img src="./media/image42.png" style="width:3.41522in;height:2.2498in"
 alt="A screenshot of a computer Description automatically generated" />
 
-### Buttons
+</details>
+<details><summary>Buttons</summary>
 
 A third way to present items is as a row of buttons. Change Sex to
 Bootstrap buttons, click Save, and the preview question:
@@ -579,7 +591,8 @@ alt="A screenshot of a question Description automatically generated" />
 As you can see, the longer answer looks a bit ugly, so take care with
 this style.
 
-### Multiple Answer Questions
+</details>
+<details><summary>Multiple Answer Questions</summary>
 
 Single answer lists have round ‘radio buttons’ that toggle on and then
 off if people press another one. If you ask people whether they had
@@ -627,9 +640,8 @@ From a data point of view, each option becomes a separate yes/no
 question, so the data file becomes correspondingly larger, *and you
 should use these sparingly.*
 
-## A matrix of items using a Likert rating scale
-
-### Likert Rating Scale
+</details>
+<details><summary>Likert Rating Scales</summary>
 
 Most questionnaires will use some form of rating scale, where people
 have to select one of several ordinal responses. Common examples are
@@ -677,7 +689,8 @@ If you are writing a lot of surveys, you can save a frequently used
 scale like this by clicking Save label set. You can then reload it later
 using Load label set.
 
-### Semantic Differential questions
+</details>
+<details><summary>Semantic Differential questions</summary>
 
 Semantic differential questions are those where you put an adjective on
 the left and its opposite on the right, and so rate the same statement
@@ -726,7 +739,8 @@ alt="A screenshot of a questionnaire Description automatically generated" />
 <img src="./media/image56.png" style="width:4.08423in;height:1.29002in"
 alt="A screenshot of a survey Description automatically generated" />
 
-### Continuous Sliders
+</details>
+<details><summary>Continuous Sliders</summary>
 
 | An alternative to discrete ordinal Likert scales, sliders provide a continuous rating between two values, a bit like the ‘visual analogue scales’ used in physical questionnaires. These are hidden away under the **Mask question** type **Multiple numerical input.** | <img src="./media/image57.png" style="width:3.02697in;height:2.17324in"
 alt="A screenshot of a computer Description automatically generated" /> |
@@ -749,7 +763,8 @@ You can now add more items as different subquestions
 <img src="./media/image59.png" style="width:6.26389in;height:2.3875in"
 alt="A screenshot of a computer Description automatically generated" />
 
-### Duplicating questions
+</details>
+<details><summary>Duplicating questions</summary>
 
 Often your surveys will consist of lots of similar questions. You can
 save time by getting one question exactly the way you want it, and then
@@ -770,7 +785,8 @@ Notice that you have options about what to copy over. Leave them all as
 **Yes**, and click **Save and close**. Edit the SliderCopy question and
 change the question to ‘How long would it take you to eat...’.
 
-## Randomising items, questions and blocks
+</details>
+<details><summary>Randomising items, questions and blocks</summary>
 
 If you have several questions each with a number of nominal options and
 always present everything in the same order, then there may be some
@@ -783,7 +799,8 @@ questions (provided that they are not ordinal, of course) and to
 randomise the order of questions (so long as they do not follow on from
 each other).
 
-### Randomising items in a question
+
+<details><summary>Randomising items in a question</summary>
 
 Consider the Breakfast multiple-answer question, which has lots of items
 that people might have eaten for breakfast. If people read through this
@@ -805,7 +822,8 @@ a Likert scale. These could also appear in random order.
 Randomise the order of the Foods items within the Likert-scale question,
 and Hide tip. Do the same for Chocolate, and the two Sliders.
 
-### Randomising the order of questions 
+</details>
+<details><summary>Randomising the order of questions </summary>
 
 To randomise the order of questions, they need to be in the same group,
 and associated within a Randomization group.
@@ -829,7 +847,8 @@ also in a different order, when you download the data, all the responses
 and questions will be in the same order that you have listed them in the
 survey.
 
-### Randomising blocks
+</details>
+<details><summary>Randomising blocks</summary>
 
 If you have several blocks, then these can also be presented in random
 order.
@@ -842,7 +861,8 @@ alt="A white rectangular object with black text Description automatically genera
 
 When you preview your survey now, you’ll find that it is a right jumble.
 
-### Randomise participants into conditions
+</details>
+<details><summary>Randomise participants into conditions</summary>
 
 Sometimes you might want to randomly allocate people to one of two sets
 of questions, or have a third in each of three conditions. This can be
@@ -914,8 +934,9 @@ random is 0 none of the questions in this block will be shown.
 
 <img src="./media/image68.png" style="width:2.91407in;height:0.98061in"
 alt="A rectangular sign with black text Description automatically generated" />
-
-## Branch to different pages depending on participants answers
+</details>
+</details>
+<details><summary>Branch to different pages depending on participants answers</summary>
 
 You may often want to skip a question or more depending upon a
 respondent’s answers to a question. For example, if they answer No to
@@ -968,7 +989,8 @@ alt="A screenshot of a chat Description automatically generated" /></th>
 
 Preview your survey and try giving and not giving consent.
 
-## Pipe answers from one question into a later question
+</details>
+<details><summary>Pipe answers from one question into a later question</summary>
 
 You might want to include one answer in a subsequent question, e.g.,
 after asking ‘What do you crave most’, and having them choose
@@ -981,7 +1003,8 @@ Make a copy of Breakfast, name it Favourite, and turn it into a Single
 choice question **List (radio)**. Oh no, all the sub-questions have
 vanished! Save and close.
 
-### Saving lists of subquestions and answer options for reuse
+</details>
+<details><summary>Saving lists of subquestions and answer options for reuse</summary>
 
 Return to Breakfast and **Edit** it. Click **Save Label set** underneath
 the subquestions – choose **New label set** and name it breakfast items.
@@ -1001,7 +1024,8 @@ and preview.
 <img src="./media/image72.png" style="width:4.63387in;height:1.38862in"
 alt="A screenshot of a questionnaire Description automatically generated" />
 
-### Piping a List question answer
+</details>
+<details><summary>Piping a List question answer</summary>
 
 Insert a new **Single choice question** named Frequency, and make it a
 **List (radio)**
@@ -1028,7 +1052,8 @@ in the List question example will generally work, unless there are
 multiple questions for an answer, as in an Array or Multiple Choice
 question.
 
-### Piping answers from a multiple choice or array question
+</details>
+<details><summary>Piping answers from a multiple choice or array question</summary>
 
 Where there are more than one aswer for a question, you need to include
 the name of the subquestion in the piping, e.g., {Breakfast_toast.shown}
@@ -1043,7 +1068,8 @@ If you preview the group, then you will see the item text of all checked
 items appear in the list as soon as you select them. If they are
 unselected, there isn’t even a blank line.
 
-### Piping answers from one question into another 
+</details>
+<details><summary>Piping answers from one question into another </summary>
 
 Previous answers can be included in lots of other places, such as
 subquestions, answer options and conditions. For example, this question
@@ -1083,16 +1109,17 @@ The condition !is_empty(UCAS_Uni1) means ‘if UCAS_Uni1 is not empty’, so
 this question would only be shown if the box for Uni1 had been filled
 in. This avoids the question ‘Did you visit at any of the following’
 being displayed when Uni1 is left empty.
-
-## Redirect to another website or SONA
+</details>
+</details>
+<details><summary>Redirect to another website or SONA</summary>
 
 When a participant has finished your survey, you may want them to do
 something else, or grant them participation credit by returning to SONA.
 
 If you want them to do an experiment, you might want to send them to a
 URL for your study, on JATOS.
-
-### Using Limesurvey with SONA
+</details>
+<details><summary> Using Limesurvey with SONA</summary>
 
 If you are using the SONA participant pool, then every person who signs
 up to do your survey is given a unique participant ID number. You can
@@ -1158,7 +1185,8 @@ onto the end it is done. If you try to assemble it in Word, beware
 Word’s helpful smart quotes feature which will turn the straight quotes
 into curved ones, which will not work in Limesurvey.
 
-### Using Limesurvey with JATOS and OpenSesame
+</details>
+<details><summary>Using Limesurvey with JATOS and OpenSesame</summary>
 
 Sending a participant to JATOS instead of SONA is done in the same way,
 except that you will paste in the URL for your experiment on JATOS
@@ -1184,7 +1212,9 @@ server, then you can probably work out how to do this, so I am just
 including the info here to let you know that it is possible and it does
 work.
 
-## Running your survey
+</details>
+</details>
+<details><summary>Running your survey</summary>
 
 Previewing the survey does not collect data (that annoying yellow bar
 has told you that).
@@ -1221,7 +1251,8 @@ alt="A screenshot of a survey Description automatically generated" /></th>
 </tbody>
 </table>
 
-### Downloading data 
+</details>
+<details><summary>Downloading data </summary>
 
 You can download your data at any time from the **Settings – Survey
 menu** option **Responses.**
@@ -1332,7 +1363,8 @@ group_by(participant) %\>% \# for each ID
 
 summarise(mtf=mean(rating, na.rm=T)) \# find mean rating, removing NA
 
-### Sharing your survey with colleagues
+</details>
+<details><summary>Sharing your survey with colleagues</summary>
 
 If you are working in a group you might want other Limesurvey users to
 be able to view or edit your survey or access the data. We have found
@@ -1349,7 +1381,8 @@ in our default settings, so ask if you need it.
 <img src="./media/image89.png" style="width:5.26532in;height:2.17034in"
 alt="A screenshot of a survey Description automatically generated" />
 
-### Stopping your survey 
+</details>
+<details><summary>Stopping your survey </summary>
 
 When you have finished piloting your survey and need to make changes, or
 when you have run it properly and finished collecting data, you can Stop
@@ -1398,9 +1431,12 @@ other changes, the data may be lost or mangled.
 <img src="./media/image94.png" style="width:4.14109in;height:3.18938in"
 alt="A screenshot of a survey Description automatically generated" />
 
-### Data handling and security
+</details>
+</details>
+<details><summary>Data handling and security</summary>
 
-### Confidentiality
+</details>
+<details><summary>Confidentiality</summary>
 
 An advantage of using our own Limesurvey implementation is that the data
 is saved within the University computing environment, so there are no
@@ -1427,7 +1463,8 @@ the survey.
 **Remember: Never ask anyone to enter their email address in the main
 survey.**
 
-### Chaining to another survey
+</details>
+<details><summary>Chaining to another survey</summary>
 
 If your survey is open to all anonymously, and you want to be able to
 invite people to a follow-up survey, then you should forward them to a
@@ -1445,7 +1482,8 @@ separate survey that uses a **Short Free Text** question to record email
 addresses. The second survey will also have to be set up to receive the
 id, just as the first one was, using Panel Integration.
 
-### Deleting Data from the platform
+</details>
+<details><summary>Deleting Data from the platform</summary>
 
 If you have pilot or testing data that you do not want to keep in the
 datafile, then you can selectively delete the whole attempt before
@@ -1481,7 +1519,8 @@ To delete ALL of the data, for example at the end of the study once you
 have downloaded the data, select all of the rows at once by checking the
 box at the top of the column.
 
-### Archiving and deleting old surveys
+</details>
+<details><summary>Archiving and deleting old surveys</summary>
 
 When you have completed a survey, downloaded the data, and are sure you
 will not run it again, then you should download it for safe keeping. You
@@ -1515,8 +1554,10 @@ it, then you would use the purple Create Survey button and import an
 
 <img src="./media/image98.png" style="width:3.9894in;height:1.75188in"
 alt="A screenshot of a survey Description automatically generated" />
-
-Appendix: example structured consent page
+</details>
+</details>
+<details><summary>
+Appendix: example structured consent page</summary>
 
 Thank you for taking the time to consider helping in this research,
 which is being conducted by Student Name and Jon May from the University
@@ -1578,9 +1619,10 @@ this window. You can also stop at any point in this survey by closing
 the browser window.
 
 Thank you for considering taking part in this project.
-
+</details>
+<details><summary>
 Appendix: codes for piping from different question types
-
+</summary>
 <table>
 <colgroup>
 <col style="width: 48%" />
@@ -1847,8 +1889,9 @@ text)</th>
 </tr>
 </tbody>
 </table>
-
-Appendix: expression script examples
+</details>
+<details><summary>
+Appendix: expression script examples</summary>
 
 <https://manual.limesurvey.org/ExpressionScript_examples/en>
 
