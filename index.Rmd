@@ -1,0 +1,18 @@
+---
+title: "Designing an Online Survey in Limesurvey"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+  bookdown::pdf_book: default
+---
+# About this booklet {-}
+This booklet accompanies a workshop, but can be used independently to
+find out how to create an online survey using Limesurvey. This is
+special purpose survey platform with better functionality than the forms
+that are available in Google or Office.
+
+The School of Psychology maintains its own [Limesurvey server](https://psysurvey.plymouth.ac.uk)
+
+
+_This guide was prepared in **August 2024** by Jon May_

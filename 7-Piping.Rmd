@@ -1,0 +1,102 @@
+# Pipe answers from one question into a later question
+
+You might want to include one answer in a subsequent question, e.g.,
+after asking ‘What do you crave most’, and having them choose
+‘chocolate’, you might want to ask ‘How often to you crave chocolate?’.
+You don’t want to write a different question for every option in the
+first question, but to replace chocolate with whatever they answered.
+This is called Piping.
+
+Make a copy of Breakfast, name it Favourite, and turn it into a Single
+choice question **List (radio)**. Oh no, all the sub-questions have
+vanished! Save and close.
+
+
+## Saving lists of subquestions and answer options for reuse
+
+Return to Breakfast and **Edit** it. Click **Save Label set** underneath
+the subquestions – choose **New label set** and name it breakfast items.
+
+![ ](media/image70.png)
+
+
+Return to Favourite, and click **Load label set**, then select breakfast
+items (the example here shows other label sets I’ve saved previously.
+
+![ ](media/image71.png)
+
+The Answer options should be filled with the list you had saved. Save
+and preview.
+
+![ ](media/image72.png)
+
+
+## Piping a List question answer
+
+Insert a new **Single choice question** named Frequency, and make it a
+**List (radio)**
+
+Make the text ‘How many days a week do you eat {Favourite.shown}’ and
+set **Hide tip** to On. Save and close, then preview the Group.
+
+![ ](media/image73.png)
+
+Before you click an option in Favourite, the Frequency question is just
+‘How often do you eat?’. As soon as you select an option, that answer is
+pasted in. If you change your selection, the Frequency question updates
+too.
+
+When you are using piping, make sure that every possible answer works
+grammatically. Problems can be caused by options that vary in number, or
+questions that have ‘a’ or ‘an’ before the piped text, e.g. *What are
+you most afraid of, **spiders** or an **elephant**?* followed by ‘*What
+would you do if you saw a [piped text]*’
+
+Putting the name of a question followed by ‘.shown’ in curly brackets as
+in the List question example will generally work, unless there are
+multiple questions for an answer, as in an Array or Multiple Choice
+question.
+
+
+## Piping answers from a multiple choice or array question
+
+Where there are more than one aswer for a question, you need to include
+the name of the subquestion in the piping, e.g., {Breakfast_toast.shown}
+– notice that the question and subquestion are separated by an
+underscore.
+
+Try adding a question called Chosen as a **Long Free Text** item, with all ten of the breakfast items on separate lines, and move it immediately after the Breakfast question.
+
+![ ](media/image74.png) 
+
+
+If you preview the group, then you will see the item text of all checked
+items appear in the list as soon as you select them. If they are
+unselected, there isn’t even a blank line.
+
+
+## Piping answers from one question into another
+
+Previous answers can be included in lots of other places, such as
+subquestions, answer options and conditions. For example, this question
+lets people list five Universities and records them in the fields Uni1
+to Uni5
+
+
+![ ](media/image75.png)
+
+The question looks like this in the survey:
+
+![ ](media/image76.png)
+
+You can then use these answers anywhere else in your survey, for
+example, in the conditions for a later question:
+
+![ ](media/image77.png)
+
+
+The condition !is_empty(UCAS_Uni1) means ‘if UCAS_Uni1 is not empty’, so
+this question would only be shown if the box for Uni1 had been filled
+in. This avoids the question ‘Did you visit at any of the following’
+being displayed when Uni1 is left empty.
+
