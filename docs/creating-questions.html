@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Creating questions | Designing an Online Survey in Limesurvey</title>
+  <meta name="description" content="3 Creating questions | Designing an Online Survey in Limesurvey" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Creating questions | Designing an Online Survey in Limesurvey" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Creating questions | Designing an Online Survey in Limesurvey" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="add-a-text-only-information-page-and-consent-question.html"/>
+<link rel="next" href="a-matrix-of-items-using-a-likert-scale.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this booklet</a></li>
+<li class="chapter" data-level="1" data-path="first-steps.html"><a href="first-steps.html"><i class="fa fa-check"></i><b>1</b> First steps</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="first-steps.html"><a href="first-steps.html#getting-an-account-and-logging-in"><i class="fa fa-check"></i><b>1.1</b> Getting an account and logging in</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="first-steps.html"><a href="first-steps.html#how-to-get-an-account-and-login"><i class="fa fa-check"></i><b>1.1.1</b> How to get an Account and Login</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="first-steps.html"><a href="first-steps.html#create-a-new-survey"><i class="fa fa-check"></i><b>1.2</b> Create a new survey</a></li>
+<li class="chapter" data-level="1.3" data-path="first-steps.html"><a href="first-steps.html#structuring-your-questionnaire"><i class="fa fa-check"></i><b>1.3</b> Structuring your questionnaire</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html"><i class="fa fa-check"></i><b>2</b> Add a text-only Information page and Consent question</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#creating-a-text-only-question"><i class="fa fa-check"></i><b>2.1</b> Creating a text only question</a></li>
+<li class="chapter" data-level="2.2" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#previewing"><i class="fa fa-check"></i><b>2.2</b> Previewing</a></li>
+<li class="chapter" data-level="2.3" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#adding-images-or-movies"><i class="fa fa-check"></i><b>2.3</b> Adding Images or Movies</a></li>
+<li class="chapter" data-level="2.4" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#adding-yesno-questions"><i class="fa fa-check"></i><b>2.4</b> Adding Yes/No Questions</a></li>
+<li class="chapter" data-level="2.5" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#customising-the-appearance-of-the-survey"><i class="fa fa-check"></i><b>2.5</b> Customising the appearance of the survey</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="creating-questions.html"><a href="creating-questions.html"><i class="fa fa-check"></i><b>3</b> Creating questions</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="creating-questions.html"><a href="creating-questions.html#age-and-sex"><i class="fa fa-check"></i><b>3.1</b> Age and Sex</a></li>
+<li class="chapter" data-level="3.2" data-path="creating-questions.html"><a href="creating-questions.html#make-a-new-group-of-questions"><i class="fa fa-check"></i><b>3.2</b> Make a new Group of questions</a></li>
+<li class="chapter" data-level="3.3" data-path="creating-questions.html"><a href="creating-questions.html#always-name-your-questions"><i class="fa fa-check"></i><b>3.3</b> Always Name your questions</a></li>
+<li class="chapter" data-level="3.4" data-path="creating-questions.html"><a href="creating-questions.html#create-a-single-choice-question"><i class="fa fa-check"></i><b>3.4</b> Create a single choice question</a></li>
+<li class="chapter" data-level="3.5" data-path="creating-questions.html"><a href="creating-questions.html#mandatory-questions"><i class="fa fa-check"></i><b>3.5</b> Mandatory questions</a></li>
+<li class="chapter" data-level="3.6" data-path="creating-questions.html"><a href="creating-questions.html#asking-for-a-number"><i class="fa fa-check"></i><b>3.6</b> Asking for a number</a></li>
+<li class="chapter" data-level="3.7" data-path="creating-questions.html"><a href="creating-questions.html#dropdown-lists"><i class="fa fa-check"></i><b>3.7</b> Dropdown lists</a></li>
+<li class="chapter" data-level="3.8" data-path="creating-questions.html"><a href="creating-questions.html#buttons"><i class="fa fa-check"></i><b>3.8</b> Buttons</a></li>
+<li class="chapter" data-level="3.9" data-path="creating-questions.html"><a href="creating-questions.html#multiple-answer-questions"><i class="fa fa-check"></i><b>3.9</b> Multiple Answer Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html"><i class="fa fa-check"></i><b>4</b> A matrix of items using a Likert scale</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html#likert-rating-scales"><i class="fa fa-check"></i><b>4.1</b> Likert Rating Scales</a></li>
+<li class="chapter" data-level="4.2" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html#semantic-differential-questions"><i class="fa fa-check"></i><b>4.2</b> Semantic Differential questions</a></li>
+<li class="chapter" data-level="4.3" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html#continuous-sliders"><i class="fa fa-check"></i><b>4.3</b> Continuous Sliders</a></li>
+<li class="chapter" data-level="4.4" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html#duplicating-questions"><i class="fa fa-check"></i><b>4.4</b> Duplicating questions</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html"><i class="fa fa-check"></i><b>5</b> Randomising items, questions and blocks</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-items-in-a-question"><i class="fa fa-check"></i><b>5.1</b> Randomising items in a question</a></li>
+<li class="chapter" data-level="5.2" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-the-order-of-questions"><i class="fa fa-check"></i><b>5.2</b> Randomising the order of questions</a></li>
+<li class="chapter" data-level="5.3" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-blocks"><i class="fa fa-check"></i><b>5.3</b> Randomising blocks</a></li>
+<li class="chapter" data-level="5.4" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomise-participants-into-conditions"><i class="fa fa-check"></i><b>5.4</b> Randomise participants into conditions</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html"><i class="fa fa-check"></i><b>6</b> Branch to different pages depending on participants answers</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html#make-a-question-group-conditional"><i class="fa fa-check"></i><b>6.1</b> Make a question group conditional</a></li>
+<li class="chapter" data-level="6.2" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html#making-an-individual-question-conditional"><i class="fa fa-check"></i><b>6.2</b> Making an individual question conditional</a></li>
+<li class="chapter" data-level="6.3" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html#re-ordering-questions-and-groups"><i class="fa fa-check"></i><b>6.3</b> Re-ordering questions and groups</a></li>
+<li class="chapter" data-level="6.4" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html#add-a-thank-you-and-sorry-message"><i class="fa fa-check"></i><b>6.4</b> Add a Thank You and Sorry Message</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html"><i class="fa fa-check"></i><b>7</b> Pipe answers from one question into a later question</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html#saving-lists-of-subquestions-and-answer-options-for-reuse"><i class="fa fa-check"></i><b>7.1</b> Saving lists of subquestions and answer options for reuse</a></li>
+<li class="chapter" data-level="7.2" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html#piping-a-list-question-answer"><i class="fa fa-check"></i><b>7.2</b> Piping a List question answer</a></li>
+<li class="chapter" data-level="7.3" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html#piping-answers-from-a-multiple-choice-or-array-question"><i class="fa fa-check"></i><b>7.3</b> Piping answers from a multiple choice or array question</a></li>
+<li class="chapter" data-level="7.4" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html#piping-answers-from-one-question-into-another"><i class="fa fa-check"></i><b>7.4</b> Piping answers from one question into another</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html"><i class="fa fa-check"></i><b>8</b> Redirect to another website or SONA</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona"><i class="fa fa-check"></i><b>8.1</b> Using Limesurvey with SONA</a></li>
+<li class="chapter" data-level="8.2" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame"><i class="fa fa-check"></i><b>8.2</b> Using Limesurvey with JATOS and OpenSesame</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="running-your-survey.html"><a href="running-your-survey.html"><i class="fa fa-check"></i><b>9</b> Running your survey</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="running-your-survey.html"><a href="running-your-survey.html#downloading-data"><i class="fa fa-check"></i><b>9.1</b> Downloading data</a></li>
+<li class="chapter" data-level="9.2" data-path="running-your-survey.html"><a href="running-your-survey.html#sharing-your-survey-with-colleagues"><i class="fa fa-check"></i><b>9.2</b> Sharing your survey with colleagues</a></li>
+<li class="chapter" data-level="9.3" data-path="running-your-survey.html"><a href="running-your-survey.html#stopping-your-survey"><i class="fa fa-check"></i><b>9.3</b> Stopping your survey</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html"><i class="fa fa-check"></i><b>10</b> Data handling and security</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html#confidentiality"><i class="fa fa-check"></i><b>10.1</b> Confidentiality</a></li>
+<li class="chapter" data-level="10.2" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html#chaining-to-another-survey"><i class="fa fa-check"></i><b>10.2</b> Chaining to another survey</a></li>
+<li class="chapter" data-level="10.3" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html#deleting-data-from-the-platform"><i class="fa fa-check"></i><b>10.3</b> Deleting Data from the platform</a></li>
+<li class="chapter" data-level="10.4" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html#archiving-and-deleting-old-surveys"><i class="fa fa-check"></i><b>10.4</b> Archiving and deleting old surveys</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i>Appendices</a>
+<ul>
+<li class="chapter" data-level="10.5" data-path="appendices.html"><a href="appendices.html#appendix-1-example-structured-consent-page"><i class="fa fa-check"></i><b>10.5</b> Appendix 1: example structured consent page</a></li>
+<li class="chapter" data-level="10.6" data-path="appendices.html"><a href="appendices.html#appendix-2-codes-for-piping-from-different-question-types"><i class="fa fa-check"></i><b>10.6</b> Appendix 2: codes for piping from different question types</a></li>
+<li class="chapter" data-level="10.7" data-path="appendices.html"><a href="appendices.html#appendix3-expression-script-examples"><i class="fa fa-check"></i><b>10.7</b> Appendix3: expression script examples</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Designing an Online Survey in Limesurvey</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="creating-questions" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Creating questions<a href="creating-questions.html#creating-questions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="age-and-sex" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Age and Sex<a href="creating-questions.html#age-and-sex" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After the consent page, it is common to ask for demographic variables
+such as age and sex. It is better to collect these at the start of the
+survey, and not at the end, in case people drop out during the survey.
+You can run statistical tests for selective drop out by sex or age
+(etc.) if you collect the information at the start of the survey.</p>
+</div>
+<div id="make-a-new-group-of-questions" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Make a new Group of questions<a href="creating-questions.html#make-a-new-group-of-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To show these on a new page, click <strong>Add Group</strong>, and give the Group the
+<strong>Title</strong> Demographics. Here is no need to add a <strong>Description</strong>.</p>
+<p><img src="media/image27.png" /></p>
+<p>Click <strong>Save</strong>, and then <strong>Add Question</strong>. Name your new question Sex.</p>
+</div>
+<div id="always-name-your-questions" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Always Name your questions<a href="creating-questions.html#always-name-your-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Naming questions is essential</strong>. These names will be used as
+the columns in your data file, and in using other survey features, so
+they should be short, informative and not contain spaces or other
+punctuation. If you need to use more than one word, or need to add
+numbers, then use an underscore e.g., ‘Scale_Before’ and ‘Scale_After’.
+Using an underscore as a ‘delimiter’ makes it easy to preprocess the
+data in statistical software such as R or Jamovi.</p>
+</div>
+<div id="create-a-single-choice-question" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Create a single choice question<a href="creating-questions.html#create-a-single-choice-question" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When you select the <strong>Question Type</strong>, you will see that in <strong>Mask</strong>
+there is a predefined <strong>Gender</strong> question, which you can use later if
+you like, but for now please use <strong>Single Choice Questions</strong> and choose
+<strong>List (radio)</strong> (radio means that it used ‘radio buttons’ which only
+allow one option to be chosen, unlike checkboxes, which allow several
+options to be chosen).</p>
+<p><img src="media/image28.png" /></p>
+<p><img src="media/image29.png" /></p>
+<p>Make the question something like ‘What sex are you?’.</p>
+<p>Enter the options in the <strong>Answer options</strong> section under the
+<strong>Question</strong> box.</p>
+<p><img src="media/image30.png" /></p>
+<p>Change the text ‘Some example answer option to ‘Female’, then click the
+green <img src="media/image31.png" /> and type ‘Male’.</p>
+<p>Before continuing, change the <strong>Code</strong> boxes too. This is not essential,
+but it is a very good thing to do because it will make your data file
+more readable and makes later things easier to do as well. The shorter
+your Code is while still being meaningful the better, so lets use F, M
+and DNS.</p>
+<p><img src="media/image32.png" /></p>
+<p>What other options apart from Male and Female might you want to add?
+Obviously it is possible that you might have participants who do not
+want to identify themselves as either female or male, but do you want to
+specify lots of possible options in this question, trying to guess their
+preferred description?</p>
+<p>Consider how you would report this in your write-up: you would probably
+not want to use a lot of space on this, and would just write ‘67 female,
+48 male, and two others’. You could therefore add a ‘Do not wish to say’
+option.</p>
+<p>If you want to have an Other option that allows people to type their own
+response then on the right hand side, set <strong>Other</strong> to On. Click
+<strong>Save</strong> and <strong>Preview the Question:</strong></p>
+<p><img src="media/image33.png" /></p>
+</div>
+<div id="mandatory-questions" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Mandatory questions<a href="creating-questions.html#mandatory-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Should you make this question Mandatory? Forcing a response can avoid
+getting missing data if a respondent misses a question by mistake, but
+it can also annoy people who don’t want to answer one item but might do
+the rest of your survey, so think carefully about how essential it is to
+obtain the data you are asking for and use it sparingly. In this case,
+leave <strong>Mandatory</strong> at Off (in analysis, you can recode missing answers
+as ‘Do not wish to say’)</p>
+</div>
+<div id="asking-for-a-number" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Asking for a number<a href="creating-questions.html#asking-for-a-number" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Age is more complicated than sex. You would not want to use a question
+with every possible age listed, and you need to collect more exact
+details than ‘age groups’ such as ‘under 18’, ’18 to 24’, and so on or
+you cannot report the mean and range.</p>
+<p>You could ask them to type their age, but you want to make sure they
+only enter a number, not text. Text entries would be very difficult to
+analyse – you cannot find a mean from text.</p>
+<p>To force people to enter a number, create a new question and select
+<strong>Mask questions, Numerical input</strong></p>
+<p><img src="media/image34.png" /></p>
+<p>Name this question Age, and then enter the question text ‘How old were
+you at your last birthday (whole years)’.</p>
+<p>While editing this question, you can change the amount of space provided for the answer from the whole width of the screen to a smaller size – in the settings on the right, click <strong>Display</strong>, and change the <strong>Text input box width</strong> to 17%.</p>
+<p><img src="media/image35.png" /></p>
+</div>
+<div id="dropdown-lists" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> Dropdown lists<a href="creating-questions.html#dropdown-lists" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A dropdown list is an alternative way of presenting answer options that
+can be useful when you have a lot of options that would otherwise take
+up a lot of screen space. They have a disadvantage, in that the
+participant has to click and drag to the right answer rather than just
+click, so some people find them harder to use.
+<em>Avoid dropdown lists if space is not an issue.</em></p>
+<p>Change Sex into a dropdown list by editing it and changing the Question
+type from <strong>List (radio)</strong> to <strong>List (dropdown).</strong></p>
+<p><img src="media/image42.png" /> s</p>
+</div>
+<div id="buttons" class="section level2 hasAnchor" number="3.8">
+<h2><span class="header-section-number">3.8</span> Buttons<a href="creating-questions.html#buttons" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A third way to present items is as a row of buttons. Change Sex to
+Bootstrap buttons, click Save, and the preview question:</p>
+<p><img src="media/image43.png" /></p>
+<p><img src="media/image44.png" /></p>
+<p>As you can see, the longer answer looks a bit ugly, so take care with
+this style.</p>
+</div>
+<div id="multiple-answer-questions" class="section level2 hasAnchor" number="3.9">
+<h2><span class="header-section-number">3.9</span> Multiple Answer Questions<a href="creating-questions.html#multiple-answer-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Single answer lists have round ‘radio buttons’ that toggle on and then
+off if people press another one. If you ask people whether they had
+cornflakes or toast for breakfast, and they had both, they may be
+frustrated with your survey.</p>
+<p>Make a new group ‘Questions’, set its Condition to Consent==“Y” and
+click Save.</p>
+<p>Add a new question Breakfast which asks ‘What did you have for
+breakfast’, and under Question Type click <strong>Multiple choice questions,</strong>
+and select <strong>Multiple Choice</strong>.</p>
+<p>We will add several items that you might have for breakfast. Instead of
+adding them one at a time, click <strong>Quick add</strong>. Then add some things
+they might have had.</p>
+<p><img src="media/image45.png" /></p>
+<p>As the help information says, here we are naming the option as well as
+entering the text to display, separating them with a semicolon (no
+spaces). When you click <strong>Add</strong>, they will all be filled in for you.</p>
+<p>Notice that we still have the example row though – Add will Add to the
+existing options. If you had clicked <strong>Replace</strong>, it would have replaced
+them. You can remove the example by clicking</p>
+<p><img src="media/image46.png" /></p>
+<p>Click Save and preview the
+question.</p>
+<p>This format uses checkboxes which show ticks if selected:</p>
+<p><img src="media/image47.png" style="width:50.0%" /></p>
+<p>Ten items take up a lot of space, so you could format them in columns –
+under Display, set Display columns to 3. Save and preview!</p>
+<p>Radio buttons and checkboxes are universally used conventions in
+computer interface design, so you should not need to add explanatory
+text.</p>
+<p>From a data point of view, each option becomes a separate yes/no
+question, so the data file becomes correspondingly larger, <em>and you
+should use these sparingly.</em></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="add-a-text-only-information-page-and-consent-question.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="a-matrix-of-items-using-a-likert-scale.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
