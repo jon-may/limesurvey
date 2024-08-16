@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>9 Running your survey | Designing an Online Survey in Limesurvey</title>
+  <meta name="description" content="9 Running your survey | Designing an Online Survey in Limesurvey" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="9 Running your survey | Designing an Online Survey in Limesurvey" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="9 Running your survey | Designing an Online Survey in Limesurvey" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="redirect-to-another-website-or-sona.html"/>
+<link rel="next" href="data-handling-and-security.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this booklet</a></li>
+<li class="chapter" data-level="1" data-path="first-steps.html"><a href="first-steps.html"><i class="fa fa-check"></i><b>1</b> First steps</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="first-steps.html"><a href="first-steps.html#getting-an-account-and-logging-in"><i class="fa fa-check"></i><b>1.1</b> Getting an account and logging in</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="first-steps.html"><a href="first-steps.html#how-to-get-an-account-and-login"><i class="fa fa-check"></i><b>1.1.1</b> How to get an Account and Login</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="first-steps.html"><a href="first-steps.html#create-a-new-survey"><i class="fa fa-check"></i><b>1.2</b> Create a new survey</a></li>
+<li class="chapter" data-level="1.3" data-path="first-steps.html"><a href="first-steps.html#structuring-your-questionnaire"><i class="fa fa-check"></i><b>1.3</b> Structuring your questionnaire</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html"><i class="fa fa-check"></i><b>2</b> Add a text-only Information page and Consent question</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#creating-a-text-only-question"><i class="fa fa-check"></i><b>2.1</b> Creating a text only question</a></li>
+<li class="chapter" data-level="2.2" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#previewing"><i class="fa fa-check"></i><b>2.2</b> Previewing</a></li>
+<li class="chapter" data-level="2.3" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#adding-images-or-movies"><i class="fa fa-check"></i><b>2.3</b> Adding Images or Movies</a></li>
+<li class="chapter" data-level="2.4" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#adding-yesno-questions"><i class="fa fa-check"></i><b>2.4</b> Adding Yes/No Questions</a></li>
+<li class="chapter" data-level="2.5" data-path="add-a-text-only-information-page-and-consent-question.html"><a href="add-a-text-only-information-page-and-consent-question.html#customising-the-appearance-of-the-survey"><i class="fa fa-check"></i><b>2.5</b> Customising the appearance of the survey</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="creating-questions.html"><a href="creating-questions.html"><i class="fa fa-check"></i><b>3</b> Creating questions</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="creating-questions.html"><a href="creating-questions.html#age-and-sex"><i class="fa fa-check"></i><b>3.1</b> Age and Sex</a></li>
+<li class="chapter" data-level="3.2" data-path="creating-questions.html"><a href="creating-questions.html#make-a-new-group-of-questions"><i class="fa fa-check"></i><b>3.2</b> Make a new Group of questions</a></li>
+<li class="chapter" data-level="3.3" data-path="creating-questions.html"><a href="creating-questions.html#always-name-your-questions"><i class="fa fa-check"></i><b>3.3</b> Always Name your questions</a></li>
+<li class="chapter" data-level="3.4" data-path="creating-questions.html"><a href="creating-questions.html#create-a-single-choice-question"><i class="fa fa-check"></i><b>3.4</b> Create a single choice question</a></li>
+<li class="chapter" data-level="3.5" data-path="creating-questions.html"><a href="creating-questions.html#mandatory-questions"><i class="fa fa-check"></i><b>3.5</b> Mandatory questions</a></li>
+<li class="chapter" data-level="3.6" data-path="creating-questions.html"><a href="creating-questions.html#asking-for-a-number"><i class="fa fa-check"></i><b>3.6</b> Asking for a number</a></li>
+<li class="chapter" data-level="3.7" data-path="creating-questions.html"><a href="creating-questions.html#dropdown-lists"><i class="fa fa-check"></i><b>3.7</b> Dropdown lists</a></li>
+<li class="chapter" data-level="3.8" data-path="creating-questions.html"><a href="creating-questions.html#buttons"><i class="fa fa-check"></i><b>3.8</b> Buttons</a></li>
+<li class="chapter" data-level="3.9" data-path="creating-questions.html"><a href="creating-questions.html#multiple-answer-questions"><i class="fa fa-check"></i><b>3.9</b> Multiple Answer Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html"><i class="fa fa-check"></i><b>4</b> A matrix of items using a Likert scale</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html#likert-rating-scales"><i class="fa fa-check"></i><b>4.1</b> Likert Rating Scales</a></li>
+<li class="chapter" data-level="4.2" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html#semantic-differential-questions"><i class="fa fa-check"></i><b>4.2</b> Semantic Differential questions</a></li>
+<li class="chapter" data-level="4.3" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html#continuous-sliders"><i class="fa fa-check"></i><b>4.3</b> Continuous Sliders</a></li>
+<li class="chapter" data-level="4.4" data-path="a-matrix-of-items-using-a-likert-scale.html"><a href="a-matrix-of-items-using-a-likert-scale.html#duplicating-questions"><i class="fa fa-check"></i><b>4.4</b> Duplicating questions</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html"><i class="fa fa-check"></i><b>5</b> Randomising items, questions and blocks</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-items-in-a-question"><i class="fa fa-check"></i><b>5.1</b> Randomising items in a question</a></li>
+<li class="chapter" data-level="5.2" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-the-order-of-questions"><i class="fa fa-check"></i><b>5.2</b> Randomising the order of questions</a></li>
+<li class="chapter" data-level="5.3" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-blocks"><i class="fa fa-check"></i><b>5.3</b> Randomising blocks</a></li>
+<li class="chapter" data-level="5.4" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomise-participants-into-conditions"><i class="fa fa-check"></i><b>5.4</b> Randomise participants into conditions</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html"><i class="fa fa-check"></i><b>6</b> Branch to different pages depending on participants answers</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html#make-a-question-group-conditional"><i class="fa fa-check"></i><b>6.1</b> Make a question group conditional</a></li>
+<li class="chapter" data-level="6.2" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html#making-an-individual-question-conditional"><i class="fa fa-check"></i><b>6.2</b> Making an individual question conditional</a></li>
+<li class="chapter" data-level="6.3" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html#re-ordering-questions-and-groups"><i class="fa fa-check"></i><b>6.3</b> Re-ordering questions and groups</a></li>
+<li class="chapter" data-level="6.4" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html#add-a-thank-you-and-sorry-message"><i class="fa fa-check"></i><b>6.4</b> Add a Thank You and Sorry Message</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html"><i class="fa fa-check"></i><b>7</b> Pipe answers from one question into a later question</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html#saving-lists-of-subquestions-and-answer-options-for-reuse"><i class="fa fa-check"></i><b>7.1</b> Saving lists of subquestions and answer options for reuse</a></li>
+<li class="chapter" data-level="7.2" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html#piping-a-list-question-answer"><i class="fa fa-check"></i><b>7.2</b> Piping a List question answer</a></li>
+<li class="chapter" data-level="7.3" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html#piping-answers-from-a-multiple-choice-or-array-question"><i class="fa fa-check"></i><b>7.3</b> Piping answers from a multiple choice or array question</a></li>
+<li class="chapter" data-level="7.4" data-path="pipe-answers-from-one-question-into-a-later-question.html"><a href="pipe-answers-from-one-question-into-a-later-question.html#piping-answers-from-one-question-into-another"><i class="fa fa-check"></i><b>7.4</b> Piping answers from one question into another</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html"><i class="fa fa-check"></i><b>8</b> Redirect to another website or SONA</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona"><i class="fa fa-check"></i><b>8.1</b> Using Limesurvey with SONA</a></li>
+<li class="chapter" data-level="8.2" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame"><i class="fa fa-check"></i><b>8.2</b> Using Limesurvey with JATOS and OpenSesame</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="running-your-survey.html"><a href="running-your-survey.html"><i class="fa fa-check"></i><b>9</b> Running your survey</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="running-your-survey.html"><a href="running-your-survey.html#downloading-data"><i class="fa fa-check"></i><b>9.1</b> Downloading data</a></li>
+<li class="chapter" data-level="9.2" data-path="running-your-survey.html"><a href="running-your-survey.html#sharing-your-survey-with-colleagues"><i class="fa fa-check"></i><b>9.2</b> Sharing your survey with colleagues</a></li>
+<li class="chapter" data-level="9.3" data-path="running-your-survey.html"><a href="running-your-survey.html#stopping-your-survey"><i class="fa fa-check"></i><b>9.3</b> Stopping your survey</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html"><i class="fa fa-check"></i><b>10</b> Data handling and security</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html#confidentiality"><i class="fa fa-check"></i><b>10.1</b> Confidentiality</a></li>
+<li class="chapter" data-level="10.2" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html#chaining-to-another-survey"><i class="fa fa-check"></i><b>10.2</b> Chaining to another survey</a></li>
+<li class="chapter" data-level="10.3" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html#deleting-data-from-the-platform"><i class="fa fa-check"></i><b>10.3</b> Deleting Data from the platform</a></li>
+<li class="chapter" data-level="10.4" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html#archiving-and-deleting-old-surveys"><i class="fa fa-check"></i><b>10.4</b> Archiving and deleting old surveys</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i>Appendices</a>
+<ul>
+<li class="chapter" data-level="10.5" data-path="appendices.html"><a href="appendices.html#appendix-1-example-structured-consent-page"><i class="fa fa-check"></i><b>10.5</b> Appendix 1: example structured consent page</a></li>
+<li class="chapter" data-level="10.6" data-path="appendices.html"><a href="appendices.html#appendix-2-codes-for-piping-from-different-question-types"><i class="fa fa-check"></i><b>10.6</b> Appendix 2: codes for piping from different question types</a></li>
+<li class="chapter" data-level="10.7" data-path="appendices.html"><a href="appendices.html#appendix3-expression-script-examples"><i class="fa fa-check"></i><b>10.7</b> Appendix3: expression script examples</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Designing an Online Survey in Limesurvey</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="running-your-survey" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">9</span> Running your survey<a href="running-your-survey.html#running-your-survey" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Previewing the survey does not collect data (that annoying yellow bar
+has told you that).</p>
+<p>It is safe to activate your survey while you are developing it. Click
+the green Activate survey button to do so.</p>
+<p><img src="media/image81.png" /></p>
+<p>Despite the scary warnings in the next pop up, you can add and delete
+things, if you deactivate the survey again, though this will delete any
+data you’ve collected in the meantime so you should not actually collect
+real data until you have thoroughly pilot tested the survey and checked
+its data file. Check that <strong>Date stamp</strong> is On, so you can work out when
+each participant did the survey. Leave the rest Off. You do want
+<strong>Open-access mode</strong> unless you are using a Limesurvey Panel to invite
+people from a mailing list you have set up (not in this guide).</p>
+<p><img src="media/image82.png" style="width:50.0%" /></p>
+<div id="downloading-data" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Downloading data<a href="running-your-survey.html#downloading-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You can download your data at any time from the <strong>Settings – Survey
+menu</strong> option <strong>Responses.</strong></p>
+<p>Clicking this brings up a screen with information about how many
+responses you have and some options to display them on-screen. However,
+you simply need to click the <strong>Export</strong> button at the top of the screen,
+and choose Export responses.</p>
+<p><img src="media/image83.png" /></p>
+<p>After that the flexibility makes it look complicated, but if you leave
+everything at their defaults you will get a plain CSV file that anything
+can read. The main choice you need to make is on the right, under
+<strong>Headings : Export questions as</strong>:</p>
+<p>Here is an example of how a survey’s data exports with each option:</p>
+<p>Question Code:</p>
+<p><img src="media/image84.png" /></p>
+<p>Abbreviated question text:</p>
+<p><img src="media/image85.png" /></p>
+<p>Full question text:</p>
+<p><img src="media/image86.png" /></p>
+<p>Question code and question text:</p>
+<p><img src="media/image87.png" /></p>
+<p>The last option, <strong>Question code and question text</strong>, is the best from
+an Open-Science point of view, especially if you leave <strong>Export
+responses</strong> as Full answers, as I have here.</p>
+<p>This data file is fully comprehensible in its own right, without needing
+a copy of the survey to consult to understand what was asked or what the
+answers mean. For analytic purposes, the header row cells start with the
+Question name, the subquestion code in brackets, followed by the
+Question text, and then the subquestion text in brackets.</p>
+<p>It is possible to split this text up in a program like R to keep the
+codes as variable names (e.g., MTF_01 and MTF_02 while preserving the
+question and subquestion text as a vector for labelling output.</p>
+<p>For example, here is some R code to do this:</p>
+<pre><code>data&lt;-read.csv(&quot;results-survey352368.csv&quot;) # read the limesurvey data
+
+var.item&lt;-tibble(cols=colnames(data)) %&gt;% # make a tibble from data&#39;s columnames
+  mutate(cols=str_replace_all(cols,&quot;[&quot;,&quot;_&quot;), # replace [ with _
+         cols=str_replace_all(cols,&quot;]&quot;,&quot;&quot;), # delete ]
+         var=str_extract(cols, &quot;[A-Za-z0-9_]*.&quot;), # select all text up to first dot
+         var=str_sub(var, 1, -2), # delete the dot
+         item=str_sub(cols, str_length(var)+3,-1)) # select everything after the dot
+
+colnames(data)=var.item$var # set columnames in data to var</code></pre>
+<p>It is also advisable to export the <strong>full answer text</strong>, rather than
+Answer codes. Answer Codes turns the data into whatever you had entered
+in the Codes field of the question or numerical values if you had left
+them blank, as here:</p>
+<p><img src="media/image88.png" /></p>
+<p>Answer codes look easy to analyse, but what do they mean? Which ones
+need to be reverse coded? Text is meaningful, so export it and make the
+effort to recode it to numbers in your analysis script. Putting the data
+and script together makes your research transparent, and mistakes can be
+spotted and corrected.</p>
+<p>For example, this R code finds all items beginning MTF, recodes their
+likert scale to numbers, reverse codes some items, and finds the mean
+for each participant:</p>
+<pre><code>mtf&lt;-data %&gt;% select(participant, starts_with(&quot;MTF&quot;)) %&gt;% # select ID and MTF vars
+  pivot_longer(-participant) %&gt;% # make longer (participant, name, value)
+  mutate(rating=case_when( # create a new variable called rating
+                 value==&quot;Strongly agree&quot; ~ 5, # matching each text to a number
+                 value==&quot;Agree&quot; ~ 4,
+                 value==&quot;Neither agree nor disagree&quot; ~ 3
+                 value==&quot;Disagree&quot; ~ 2,
+                 value==&quot;Strongly disagree&quot; ~ 1,
+                 T ~ NA), # anything else is NA
+      rating = ifelse(name %in% c(&quot;MTF_01&quot;, &quot;MTF_03&quot;, &quot;MTF_09&quot;), # if the name is in this list
+                      6-rating, # reverse-code the item
+                      rating) # else leave it alone
+      ) %&gt;%
+  group_by(participant) %&gt;% # for each ID
+  summarise(mtf=mean(rating, na.rm=T)) # find mean rating, removing NA</code></pre>
+</div>
+<div id="sharing-your-survey-with-colleagues" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Sharing your survey with colleagues<a href="running-your-survey.html#sharing-your-survey-with-colleagues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you are working in a group you might want other Limesurvey users to
+be able to view or edit your survey or access the data. You can add
+users to a survey from the <strong>Settings</strong> menu, under <strong>Survey
+Permissions</strong>. Select a User from the <strong>User: Please choose…’</strong> dropdown
+list, and click <strong>Add User</strong>.</p>
+<p><img src="media/image89.png" /></p>
+<p>You then need to grant them ‘permissions’ by clicking the … icon at
+the right of their row in the list of users and select <strong>Edit
+permissions</strong>. Set them like this by checking the <strong>General</strong> box on a
+row (the others are then filled in for you)</p>
+<p><img src="media/image89a.png" style="width:50.0%" /></p>
+<p>There is also an option to add a whole Group of users, but we advise
+against doing this because you can only remove people one at a time and
+the edit permissions screen is currently buggy.</p>
+</div>
+<div id="stopping-your-survey" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Stopping your survey<a href="running-your-survey.html#stopping-your-survey" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When you have finished piloting your survey and need to make changes, or
+when you have run it properly and finished collecting data, you can Stop
+the survey to prevent any more responses being made. When it is running
+the green Activate Survey becomes a red button:</p>
+<p><img src="media/image90.png" /></p>
+<p>Clicking this brings up a choice:</p>
+<p><img src="media/image91.png" /></p>
+<p>If you have indeed finished collecting data, then the left hand <strong>Expire
+Survey</strong> is a sensible option to make. Your data is easy to access, but
+you cannot make many changes to the survey.</p>
+<p>If you have just finished piloting and not yet run the survey, then you
+want to take the right-hand option, to <strong>Deactivate survey</strong> – but this
+will make the data harder to find (it is not deleted). Choose this one
+if you have been piloting to collect test data, and you have already
+exported the fully labelled Question code &amp; question text version with
+Full answers.</p>
+<p>If you do deactivate, then you’ll see this:</p>
+<p><img src="media/image92.png" /></p>
+<p>Do save a screen shot of this and name it sensibly, in case you do want
+to find that data. All those numbers are a code for the survey, and then
+a date and timestamp.</p>
+<p>To load it up again, <strong>Activate the survey</strong>, go to <strong>Responses</strong>, and
+click <strong>Import</strong>. <strong>Choose Import responses from a deactivated survey
+table</strong>.</p>
+<p><img src="media/image93.png" /></p>
+<p>I’ve tried this and it works – if there is more than one old dataset
+then you can choose which you want to reload. Note the warnings though –
+only some editing changes to the survey can be managed. If you’ve made
+other changes, the data may be lost or mangled.</p>
+<p><img src="media/image94.png" /></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="redirect-to-another-website-or-sona.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-handling-and-security.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
