@@ -71,9 +71,8 @@ Question name, the subquestion code in brackets, followed by the
 Question text, and then the subquestion text in brackets.
 
 It is possible to split this text up in a program like R to keep the
-codes as variable names (e.g., MTF_01 and MTF_02 while
-preserving the question and subquestion text as a vector for labelling
-output.
+codes as variable names (e.g., MTF_01 and MTF_02 while preserving the
+question and subquestion text as a vector for labelling output.
 
 For example, here is some R code to do this:
 
@@ -128,19 +127,23 @@ mtf<-data %>% select(participant, starts_with("MTF")) %>% # select ID and MTF va
 ## Sharing your survey with colleagues
 
 If you are working in a group you might want other Limesurvey users to
-be able to view or edit your survey or access the data. We have found
-that only users who have access to all other users' surveys can do this,
-and have set it up students cannot do this but academic staff can. If
-you are a student, please ask your supervisor to add other students to
-your survey.
-
-If you are academic staff, then you can add users to a survey from the
-**Settings** menu, under **Survey Permissions**. Select a User from the
-**'Please choose…'** dropdown list, and click **Add User**. There is
-also a feature to add whole groups of Users, but this is not available
-in our default settings, so ask if you need it.
+be able to view or edit your survey or access the data. You can add
+users to a survey from the **Settings** menu, under **Survey
+Permissions**. Select a User from the **User: Please choose…'** dropdown
+list, and click **Add User**.
 
 ![](media/image89.png)
+
+You then need to grant them 'permissions' by clicking the ... icon at
+the right of their row in the list of users and select **Edit
+permissions**. Set them like this by checking the **General** box on a
+row (the others are then filled in for you)
+
+![](media/image89a.png){width="50%"}
+
+There is also an option to add a whole Group of users, but we advise
+against doing this because you can only remove people one at a time and
+the edit permissions screen is currently buggy.
 
 ## Stopping your survey
 
@@ -149,7 +152,7 @@ when you have run it properly and finished collecting data, you can Stop
 the survey to prevent any more responses being made. When it is running
 the green Activate Survey becomes a red button:
 
-![](media/image90.png) 
+![](media/image90.png)
 
 Clicking this brings up a choice:
 
