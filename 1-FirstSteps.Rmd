@@ -28,6 +28,8 @@ use your UoP email address and password.</p>
 <p>If asked for your username, use your email address.</p></th>
 ![ ](media/image1.png){width=50%}
 
+You will be sent an email with a link to create your password. Once you have created a valid password, you can log in.
+
 When you first log in, you will see this screen, allowing you to
 List the surveys you have created. If you click the button 
 ![ ](media/image2.png)
