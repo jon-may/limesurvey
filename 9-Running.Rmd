@@ -126,18 +126,20 @@ mtf<-data %>% select(participant, starts_with("MTF")) %>% # select ID and MTF va
 
 ## Sharing your survey with colleagues
 
-If you are working in a group you might want other Limesurvey users to
-be able to view or edit your survey or access the data. You can add
-users to a survey from the **Settings** menu, under **Survey
-Permissions**. Select a User from the **User: Please choose…'** dropdown
-list, and click **Add User**.
+Nobody can see your survey or data except you and the local site
+administrators. If you are working in a group you might want other
+Limesurvey users to be able to view or edit your survey or access the
+data. You can add users to a survey from the **Settings** menu, under
+**Survey Permissions**. Select a User from the **User: Please choose…'**
+dropdown list, and click **Add User**.
 
 ![](media/image89.png)
 
-You then need to grant them 'permissions' by clicking the ... icon at
-the right of their row in the list of users and select **Edit
-permissions**. Set them like this by checking the **General** box on a
-row (the others are then filled in for you)
+This allows them to see ('read') the survey but nothing else. You also
+need to grant them 'permissions' by clicking the ... icon at the right
+of their row in the list of users and select **Edit permissions**. Set
+them like this by checking the **General** box on a row (the others are
+then filled in for you)
 
 ![](media/image89a.png){width="50%"}
 
