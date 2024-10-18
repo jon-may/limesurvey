@@ -216,9 +216,8 @@ answers mean. For analytic purposes, the header row cells start with the
 Question name, the subquestion code in brackets, followed by the
 Question text, and then the subquestion text in brackets.</p>
 <p>It is possible to split this text up in a program like R to keep the
-codes as variable names (e.g., MTF_01 and MTF_02 while
-preserving the question and subquestion text as a vector for labelling
-output.</p>
+codes as variable names (e.g., MTF_01 and MTF_02 while preserving the
+question and subquestion text as a vector for labelling output.</p>
 <p>For example, here is some R code to do this:</p>
 <pre><code>data&lt;-read.csv(&quot;results-survey352368.csv&quot;) # read the limesurvey data
 
@@ -261,18 +260,22 @@ for each participant:</p>
 </div>
 <div id="sharing-your-survey-with-colleagues" class="section level2 hasAnchor" number="9.2">
 <h2><span class="header-section-number">9.2</span> Sharing your survey with colleagues<a href="running-your-survey.html#sharing-your-survey-with-colleagues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you are working in a group you might want other Limesurvey users to
-be able to view or edit your survey or access the data. We have found
-that only users who have access to all other users’ surveys can do this,
-and have set it up students cannot do this but academic staff can. If
-you are a student, please ask your supervisor to add other students to
-your survey.</p>
-<p>If you are academic staff, then you can add users to a survey from the
-<strong>Settings</strong> menu, under <strong>Survey Permissions</strong>. Select a User from the
-<strong>‘Please choose…’</strong> dropdown list, and click <strong>Add User</strong>. There is
-also a feature to add whole groups of Users, but this is not available
-in our default settings, so ask if you need it.</p>
+<p>Nobody can see your survey or data except you and the local site
+administrators. If you are working in a group you might want other
+Limesurvey users to be able to view or edit your survey or access the
+data. You can add users to a survey from the <strong>Settings</strong> menu, under
+<strong>Survey Permissions</strong>. Select a User from the <strong>User: Please choose…’</strong>
+dropdown list, and click <strong>Add User</strong>.</p>
 <p><img src="media/image89.png" /></p>
+<p>This allows them to see (‘read’) the survey but nothing else. You also
+need to grant them ‘permissions’ by clicking the … icon at the right
+of their row in the list of users and select <strong>Edit permissions</strong>. Set
+them like this by checking the <strong>General</strong> box on a row (the others are
+then filled in for you)</p>
+<p><img src="media/image89a.png" style="width:50.0%" /></p>
+<p>There is also an option to add a whole Group of users, but we advise
+against doing this because you can only remove people one at a time and
+the edit permissions screen is currently buggy.</p>
 </div>
 <div id="stopping-your-survey" class="section level2 hasAnchor" number="9.3">
 <h2><span class="header-section-number">9.3</span> Stopping your survey<a href="running-your-survey.html#stopping-your-survey" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -357,7 +360,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["_main.pdf"],
 "search": {
 "engine": "fuse",
 "options": null
