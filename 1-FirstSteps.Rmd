@@ -1,6 +1,13 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # First steps
 
 ## Getting an account and logging in
+
 Whenever you are collecting data online, you need to make sure that the
 system you use is GDPR compliant. All survey respondents should be sure
 that their responses are anonymous and confidential, while allowing for
@@ -20,38 +27,45 @@ anything more than a simple fixed set of questions, use Limesurvey.
 
 ### How to get an Account and Login
 
+In a browser, visit <https://psysurvey.plymouth.ac.uk>
+
 Academic staff will have accounts created for them, but students can
 create their own.
 
-To create your account, click the ‘Forgot your password?’ link and
-use your UoP email address and password.</p>
-<p>If asked for your username, use your email address.</p></th>
-![ ](media/image1.png){width=50%}
+To create your account, click the ‘Forgot your password?’ link and use
+your UoP email address and password.
 
-You will be sent an email with a link to create your password. Once you have created a valid password, you can log in.
+</p>
 
-When you first log in, you will see this screen, allowing you to
-List the surveys you have created. If you click the button 
-![ ](media/image2.png)
-you will (of course) see no surveys yet. You can access this list at
-any time by clicking Surveys in the top menu bar.
-![ ](media/image3.png){width=50%}
+<p>If asked for your username, use your email address.</p>
+
+</th>
+
+![](media/image1.png){width="50%"}
+
+You will be sent an email with a link to create your password. Once you
+have created a valid password, you can log in.
+
+When you first log in, you will see this screen, allowing you to List
+the surveys you have created. If you click the button
+![](media/image2.png) you will (of course) see no surveys yet. You can
+access this list at any time by clicking Surveys in the top menu bar.
+![](media/image3.png){width="50%"}
 
 NB: If you are a member of academic staff you will be able to see all
 existing surveys.
 
-
 ## Create a new survey
-Create a new survey using the purple Create new survey button at the top
-of the window  
 
-![ ](media/image4.png)
+Create a new survey using the purple Create new survey button at the top
+of the window
+
+![](media/image4.png)
 
 Give your survey a title (you can edit this later) and then click Create
 survey
 
-![ ](media/image5.png){width=50%}
-
+![](media/image5.png){width="50%"}
 
 Your survey will look like this – Limesurvey automatically creates a
 Question for you (called ‘Q00’) and puts it into a Question Group called
@@ -60,8 +74,7 @@ your survey, and is an essential part of randomisation or presenting
 questions in a set order. Before editing this question, notice the
 details on this screen:
 
-![ ](media/image6.png) 
-
+![](media/image6.png)
 
 At the top left is the name of your survey, as a link of ‘breadcrumbs’
 which you can use to navigate back up to the list of all your surveys,
@@ -80,11 +93,11 @@ survey will appear on screen. If you click **Preview Survey**, you
 should see this **welcome screen**, and then when you click **Next**,
 the question:
 
-![ ](media/image7.png){width=50%}
+![](media/image7.png){width="50%"}
 
 CLicking the green **Next** button takes you to the first question:
 
-![ ](media/image8.png){width=50%}
+![](media/image8.png){width="50%"}
 
 By default all surveys on **psysurvey** include the school logo, as
 required by the Ethical Committee.
@@ -96,7 +109,6 @@ preview and your entry will not be saved anywhere.
 Below that is your question. You can also turn off the welcome screen –
 everything in **Limesurvey** can be controlled.
 
-
 ## Structuring your questionnaire
 
 Before you plough into creating questions, think about the basic
@@ -104,7 +116,7 @@ sections that every survey will need. Don’t build your survey as one
 huge long screen full of questions. Use separate screens with a few
 related questions on each one.
 
-![ ](media/image9.png) 
+![](media/image9.png)
 
 The horizontal arrows in this figure show how the survey continues when
 the participant clicks ‘Next’ on each page. The arcs show how the survey
@@ -150,4 +162,4 @@ website, their participant number is passed along and recorded in the
 data for each site. This is described in the final section of this
 guide.
 
-![ ](media/image10.png) 
+![](media/image10.png)
