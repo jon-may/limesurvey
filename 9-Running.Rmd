@@ -123,6 +123,19 @@ mtf<-data %>% select(participant, starts_with("MTF")) %>% # select ID and MTF va
   group_by(participant) %>% # for each ID
   summarise(mtf=mean(rating, na.rm=T)) # find mean rating, removing NA
 ```
+## Printing a copy of your survey
+
+You may need to create a PDF of your survey to attach to an Ethics application or to include as an appendix in a report. This is easy to do within the survey. 
+
+
+To get a printable copy of the survey, click the Export button at the
+top of the screen :
+
+![ ](media/image96.png)
+
+Then select Printable from the options available. This will let you print or save a copy of your survey (print to PDF).
+
+![](media/image88a.png)
 
 ## Sharing your survey with colleagues
 

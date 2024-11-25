@@ -42,7 +42,9 @@ and then click **Edit**. At the bottom of the page, set the
 
 You are entering some computer code that specifies the question name on
 the left, and the value it has to have on the right. Be careful to get
-these exactly correct – case matters.
+these exactly correct – case matters. 
+
+Also make sure to use plain &#22;straight quote&#22; marks, not &ldquo;smart&rdquo; or curly quotes.
 
 There are two things that might seem odd here:
 
