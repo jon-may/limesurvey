@@ -113,6 +113,7 @@
 <li class="chapter" data-level="5.2" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-the-order-of-questions"><i class="fa fa-check"></i><b>5.2</b> Randomising the order of questions</a></li>
 <li class="chapter" data-level="5.3" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-blocks"><i class="fa fa-check"></i><b>5.3</b> Randomising blocks</a></li>
 <li class="chapter" data-level="5.4" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomise-participants-into-conditions"><i class="fa fa-check"></i><b>5.4</b> Randomise participants into conditions</a></li>
+<li class="chapter" data-level="5.5" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#using-quotas-to-allocate-people-to-conditions"><i class="fa fa-check"></i><b>5.5</b> Using Quotas to allocate people to conditions</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html"><i class="fa fa-check"></i><b>6</b> Branch to different pages depending on participants answers</a>
 <ul>
@@ -130,14 +131,16 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html"><i class="fa fa-check"></i><b>8</b> Redirect to another website or SONA</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona"><i class="fa fa-check"></i><b>8.1</b> Using Limesurvey with SONA</a></li>
-<li class="chapter" data-level="8.2" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame"><i class="fa fa-check"></i><b>8.2</b> Using Limesurvey with JATOS and OpenSesame</a></li>
+<li class="chapter" data-level="8.1" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#conditional-redirecting"><i class="fa fa-check"></i><b>8.1</b> Conditional redirecting</a></li>
+<li class="chapter" data-level="8.2" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona"><i class="fa fa-check"></i><b>8.2</b> Using Limesurvey with SONA</a></li>
+<li class="chapter" data-level="8.3" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame"><i class="fa fa-check"></i><b>8.3</b> Using Limesurvey with JATOS and OpenSesame</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="running-your-survey.html"><a href="running-your-survey.html"><i class="fa fa-check"></i><b>9</b> Running your survey</a>
 <ul>
 <li class="chapter" data-level="9.1" data-path="running-your-survey.html"><a href="running-your-survey.html#downloading-data"><i class="fa fa-check"></i><b>9.1</b> Downloading data</a></li>
-<li class="chapter" data-level="9.2" data-path="running-your-survey.html"><a href="running-your-survey.html#sharing-your-survey-with-colleagues"><i class="fa fa-check"></i><b>9.2</b> Sharing your survey with colleagues</a></li>
-<li class="chapter" data-level="9.3" data-path="running-your-survey.html"><a href="running-your-survey.html#stopping-your-survey"><i class="fa fa-check"></i><b>9.3</b> Stopping your survey</a></li>
+<li class="chapter" data-level="9.2" data-path="running-your-survey.html"><a href="running-your-survey.html#printing-a-copy-of-your-survey"><i class="fa fa-check"></i><b>9.2</b> Printing a copy of your survey</a></li>
+<li class="chapter" data-level="9.3" data-path="running-your-survey.html"><a href="running-your-survey.html#sharing-your-survey-with-colleagues"><i class="fa fa-check"></i><b>9.3</b> Sharing your survey with colleagues</a></li>
+<li class="chapter" data-level="9.4" data-path="running-your-survey.html"><a href="running-your-survey.html#stopping-your-survey"><i class="fa fa-check"></i><b>9.4</b> Stopping your survey</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html"><i class="fa fa-check"></i><b>10</b> Data handling and security</a>
 <ul>
@@ -175,8 +178,23 @@
 something else, or grant them participation credit by returning to SONA.</p>
 <p>If you want them to do an experiment, you might want to send them to a
 URL for your study, on JATOS.</p>
-<div id="using-limesurvey-with-sona" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Using Limesurvey with SONA<a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Depending on the answers they have given to a question you might want to send them to different places,
+for example, if you have a prize draw you might have a question that asks if they want to be entered, and
+then send them to a separate survey to collect an email address (you should NEVER collect such personal data in your main survey).
+Another possibility might be that they failed an attention check, so you do not want to give them participation points.</p>
+<p>Wherever you want them to go, the destination is set in the <strong>Settings &gt; Text Elements</strong> option, in the
+<strong>End URL</strong> field. For example, this will send them to the University of Plymouth home page at the end of the survey (not very useful).</p>
+<p><img src="media/EndURL02.png" /></p>
+<div id="conditional-redirecting" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Conditional redirecting<a href="redirect-to-another-website-or-sona.html#conditional-redirecting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Suppose you have a prize draw entry question and want to send them to a url <a href="http://bit.ly/prizedraw.html" class="uri">http://bit.ly/prizedraw.html</a> if they say “Yes” but to <a href="http://bit.ly/noprizedraw.html" class="uri">http://bit.ly/noprizedraw.html</a> if they say “No”.</p>
+<p>In <strong>Settings &gt; Text Elements</strong>, find the
+<strong>End URL</strong> field, and enter an {if(variable==value,then-do-this, else-do-this)} statement, e.g.,</p>
+<p><img src="media/EndURL01.png" /></p>
+<p>You can make complicated conditions by nesting if() statements in the then-do-this or else-do-this parts of the main if().</p>
+</div>
+<div id="using-limesurvey-with-sona" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Using Limesurvey with SONA<a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If you are using the SONA participant pool, then every person who signs
 up to do your survey is given a unique participant ID number. You can
 send this to Limesurvey, then get Limesurvey to send the ID back to SONA
@@ -217,16 +235,13 @@ code with a condition:</p>
 &quot;https://uopsop.sona-systems.com/
 webstudy_credit.aspx?experiment_id=123&amp;credit_token=4e48f9b638a&amp;
 survey_code={PASSTHRU:id}&quot;)}</code></pre>
-<p>This is a bunch to type, but if you just paste</p>
-<pre><code>{if(Consent==&quot;N&quot;, &quot;https://uopsop.sona-systems.com/&quot;, &quot;</code></pre>
-<p>onto the front, and</p>
-<pre><code>&quot;)}</code></pre>
-<p>onto the end it is done. If you try to do this in Word, beware
+<p>This is a bunch to type, but you can just use this example and carefully paste your own experiment_id and credit_token values into it.</p>
+<p>If you try to do this in Word, beware
 Word’s helpful smart quotes feature which will turn the straight quotes
 into curved ones, which will not work in Limesurvey.</p>
 </div>
-<div id="using-limesurvey-with-jatos-and-opensesame" class="section level2 hasAnchor" number="8.2">
-<h2><span class="header-section-number">8.2</span> Using Limesurvey with JATOS and OpenSesame<a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="using-limesurvey-with-jatos-and-opensesame" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> Using Limesurvey with JATOS and OpenSesame<a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Sending a participant to JATOS instead of SONA is done in the same way,
 except that you will paste in the URL for your experiment on JATOS
 instead.</p>
@@ -297,7 +312,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["_main.pdf"],
 "search": {
 "engine": "fuse",
 "options": null
