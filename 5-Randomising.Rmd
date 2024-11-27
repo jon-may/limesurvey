@@ -131,3 +131,37 @@ random is 0 none of the questions in this block will be shown.
 
 ![ ](media/image68.png){width=50%}
 
+## Using Quotas to allocate people to conditions
+
+Using the Random allocation method described above is a **bottom up** method that
+will lead to roughly equal proportions of people starting each condition.  
+You can achieve uneven allocations (e.g., 1/3 and 2/3) by choosing your random numbers and conditions carefully
+(e.g., random=rand(1,3) then the conditions random=1 and random >1).
+
+If you need more precise **top down** control over the number of people finishing a condition, then you need to use Quotas. 
+
+First, make a copy of your survey's URL from the **Overview - Share survey** panel (it is green and starts https://psysurvey.plymouth.ac.uk/)
+
+In your survey's **Settings**, from the **Survey menu** select **Quotas**, and then click **Add New Quota** at the top right.
+
+![ ](media/quotas01.png){width=75%}
+
+Paste your survey URL into the **URL box**, then set the **Quota name**, and put the number of responses you want in the **Limit** box.
+Set the **Quota Action** to 'Terminate after related visible and hidden questions were submitted'.
+Set **AutoloadURL** to Yes.
+
+![ ](media/quotas02.png){width=75%}
+
+In the next three windows, click **Add answer**, then select your random variable, and then the value you want the quota to apply to. If you are setting quotas for several values, check the 'create another' checkbox. Click **Next**.
+
+![ ](media/quotas04.png){width=75%}
+
+![ ](media/quotas05.png){width=50%}
+![ ](media/quotas06.png){width=50%}
+
+The effect of this will be to check how many people have completed the survey with random set to each value, and if the limit has been met, to reload the survey - and hence generate a new random number to fulfill a different quota. As the quota action is to rerun the survey automatically, the Quota message will not be displayed. If all of the quotas are full, though, the survey will get stuck so you need to make sure you deactivate it once you have all of the people you need.
+
+For this to work smoothly, you need to have turned off the Welcome message in **Settings - Presentation**, so that it keeps reloading, to have the hidden random question as the first question in its own group, and to be displaying items question by question, or by group, as the quota is only checked when the random question is submitted.
+
+
+

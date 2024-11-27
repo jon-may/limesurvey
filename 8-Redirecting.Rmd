@@ -6,6 +6,27 @@ something else, or grant them participation credit by returning to SONA.
 If you want them to do an experiment, you might want to send them to a
 URL for your study, on JATOS.
 
+Depending on the answers they have given to a question you might want to send them to different places,
+for example, if you have a prize draw you might have a question that asks if they want to be entered, and
+then send them to a separate survey to collect an email address (you should NEVER collect such personal data in your main survey).
+Another possibility might be that they failed an attention check, so you do not want to give them participation points.
+
+Wherever you want them to go, the destination is set in the **Settings > Text Elements** option, in the 
+**End URL** field. For example, this will send them to the University of Plymouth home page at the end of the survey (not very useful).
+
+![](media/EndURL02.png)
+
+## Conditional redirecting
+Suppose you have a prize draw entry question and want to send them to a url http://bit.ly/prizedraw.html if they say "Yes" but to http://bit.ly/noprizedraw.html if they say "No".
+
+In **Settings > Text Elements**, find the
+**End URL** field, and enter an {if(variable==value,then-do-this, else-do-this)} statement, e.g.,
+
+![](media/EndURL01.png)
+
+You can make complicated conditions by nesting if() statements in the then-do-this or else-do-this parts of the main if().
+
+
 ##  Using Limesurvey with SONA
 
 If you are using the SONA participant pool, then every person who signs
@@ -67,18 +88,13 @@ code with a condition:
 webstudy_credit.aspx?experiment_id=123&credit_token=4e48f9b638a&
 survey_code={PASSTHRU:id}")}
 ```
-This is a bunch to type, but if you just paste
+This is a bunch to type, but you can just use this example and carefully paste your own experiment_id and credit_token values into it.
 
-```
-{if(Consent=="N", "https://uopsop.sona-systems.com/", "
-```
-onto the front, and
-```
-")}
-```
-onto the end it is done. If you try to do this in Word, beware
+If you try to do this in Word, beware
 Word’s helpful smart quotes feature which will turn the straight quotes
-into curved ones, which will not work in Limesurvey.
+into curved ones, which will not work in Limesurvey. 
+
+
 
 
 ## Using Limesurvey with JATOS and OpenSesame
