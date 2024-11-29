@@ -113,7 +113,6 @@
 <li class="chapter" data-level="5.2" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-the-order-of-questions"><i class="fa fa-check"></i><b>5.2</b> Randomising the order of questions</a></li>
 <li class="chapter" data-level="5.3" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomising-blocks"><i class="fa fa-check"></i><b>5.3</b> Randomising blocks</a></li>
 <li class="chapter" data-level="5.4" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#randomise-participants-into-conditions"><i class="fa fa-check"></i><b>5.4</b> Randomise participants into conditions</a></li>
-<li class="chapter" data-level="5.5" data-path="randomising-items-questions-and-blocks.html"><a href="randomising-items-questions-and-blocks.html#using-quotas-to-allocate-people-to-conditions"><i class="fa fa-check"></i><b>5.5</b> Using Quotas to allocate people to conditions</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html"><i class="fa fa-check"></i><b>6</b> Branch to different pages depending on participants answers</a>
 <ul>
@@ -131,16 +130,14 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html"><i class="fa fa-check"></i><b>8</b> Redirect to another website or SONA</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#conditional-redirecting"><i class="fa fa-check"></i><b>8.1</b> Conditional redirecting</a></li>
-<li class="chapter" data-level="8.2" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona"><i class="fa fa-check"></i><b>8.2</b> Using Limesurvey with SONA</a></li>
-<li class="chapter" data-level="8.3" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame"><i class="fa fa-check"></i><b>8.3</b> Using Limesurvey with JATOS and OpenSesame</a></li>
+<li class="chapter" data-level="8.1" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona"><i class="fa fa-check"></i><b>8.1</b> Using Limesurvey with SONA</a></li>
+<li class="chapter" data-level="8.2" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame"><i class="fa fa-check"></i><b>8.2</b> Using Limesurvey with JATOS and OpenSesame</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="running-your-survey.html"><a href="running-your-survey.html"><i class="fa fa-check"></i><b>9</b> Running your survey</a>
 <ul>
 <li class="chapter" data-level="9.1" data-path="running-your-survey.html"><a href="running-your-survey.html#downloading-data"><i class="fa fa-check"></i><b>9.1</b> Downloading data</a></li>
-<li class="chapter" data-level="9.2" data-path="running-your-survey.html"><a href="running-your-survey.html#printing-a-copy-of-your-survey"><i class="fa fa-check"></i><b>9.2</b> Printing a copy of your survey</a></li>
-<li class="chapter" data-level="9.3" data-path="running-your-survey.html"><a href="running-your-survey.html#sharing-your-survey-with-colleagues"><i class="fa fa-check"></i><b>9.3</b> Sharing your survey with colleagues</a></li>
-<li class="chapter" data-level="9.4" data-path="running-your-survey.html"><a href="running-your-survey.html#stopping-your-survey"><i class="fa fa-check"></i><b>9.4</b> Stopping your survey</a></li>
+<li class="chapter" data-level="9.2" data-path="running-your-survey.html"><a href="running-your-survey.html#sharing-your-survey-with-colleagues"><i class="fa fa-check"></i><b>9.2</b> Sharing your survey with colleagues</a></li>
+<li class="chapter" data-level="9.3" data-path="running-your-survey.html"><a href="running-your-survey.html#stopping-your-survey"><i class="fa fa-check"></i><b>9.3</b> Stopping your survey</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html"><i class="fa fa-check"></i><b>10</b> Data handling and security</a>
 <ul>
@@ -268,27 +265,6 @@ a Group conditions to match one of the random values. If you edit the
 <strong>Condition</strong> of Questions to Consent==“Y” AND random&gt;0 then when
 random is 0 none of the questions in this block will be shown.</p>
 <p><img src="media/image68.png" style="width:50.0%" /></p>
-</div>
-<div id="using-quotas-to-allocate-people-to-conditions" class="section level2 hasAnchor" number="5.5">
-<h2><span class="header-section-number">5.5</span> Using Quotas to allocate people to conditions<a href="randomising-items-questions-and-blocks.html#using-quotas-to-allocate-people-to-conditions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Using the Random allocation method described above is a <strong>bottom up</strong> method that
-will lead to roughly equal proportions of people starting each condition.<br />
-You can achieve uneven allocations (e.g., 1/3 and 2/3) by choosing your random numbers and conditions carefully
-(e.g., random=rand(1,3) then the conditions random=1 and random &gt;1).</p>
-<p>If you need more precise <strong>top down</strong> control over the number of people finishing a condition, then you need to use Quotas.</p>
-<p>First, make a copy of your survey’s URL from the <strong>Overview - Share survey</strong> panel (it is green and starts <a href="https://psysurvey.plymouth.ac.uk/" class="uri">https://psysurvey.plymouth.ac.uk/</a>)</p>
-<p>In your survey’s <strong>Settings</strong>, from the <strong>Survey menu</strong> select <strong>Quotas</strong>, and then click <strong>Add New Quota</strong> at the top right.</p>
-<p><img src="media/quotas01.png" style="width:75.0%" /></p>
-<p>Paste your survey URL into the <strong>URL box</strong>, then set the <strong>Quota name</strong>, and put the number of responses you want in the <strong>Limit</strong> box.
-Set the <strong>Quota Action</strong> to ‘Terminate after related visible and hidden questions were submitted’.
-Set <strong>AutoloadURL</strong> to Yes.</p>
-<p><img src="media/quotas02.png" style="width:75.0%" /></p>
-<p>In the next three windows, click <strong>Add answer</strong>, then select your random variable, and then the value you want the quota to apply to. If you are setting quotas for several values, check the ‘create another’ checkbox. Click <strong>Next</strong>.</p>
-<p><img src="media/quotas04.png" style="width:75.0%" /></p>
-<p><img src="media/quotas05.png" style="width:50.0%" />
-<img src="media/quotas06.png" style="width:50.0%" /></p>
-<p>The effect of this will be to check how many people have completed the survey with random set to each value, and if the limit has been met, to reload the survey - and hence generate a new random number to fulfill a different quota. As the quota action is to rerun the survey automatically, the Quota message will not be displayed. If all of the quotas are full, though, the survey will get stuck so you need to make sure you deactivate it once you have all of the people you need.</p>
-<p>For this to work smoothly, you need to have turned off the Welcome message in <strong>Settings - Presentation</strong>, so that it keeps reloading, to have the hidden random question as the first question in its own group, and to be displaying items question by question, or by group, as the quota is only checked when the random question is submitted.</p>
 
 </div>
 </div>
@@ -340,7 +316,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": null,
 "search": {
 "engine": "fuse",
 "options": null

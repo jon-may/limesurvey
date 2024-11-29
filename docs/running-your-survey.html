@@ -136,9 +136,8 @@
 <li class="chapter" data-level="9" data-path="running-your-survey.html"><a href="running-your-survey.html"><i class="fa fa-check"></i><b>9</b> Running your survey</a>
 <ul>
 <li class="chapter" data-level="9.1" data-path="running-your-survey.html"><a href="running-your-survey.html#downloading-data"><i class="fa fa-check"></i><b>9.1</b> Downloading data</a></li>
-<li class="chapter" data-level="9.2" data-path="running-your-survey.html"><a href="running-your-survey.html#printing-a-copy-of-your-survey"><i class="fa fa-check"></i><b>9.2</b> Printing a copy of your survey</a></li>
-<li class="chapter" data-level="9.3" data-path="running-your-survey.html"><a href="running-your-survey.html#sharing-your-survey-with-colleagues"><i class="fa fa-check"></i><b>9.3</b> Sharing your survey with colleagues</a></li>
-<li class="chapter" data-level="9.4" data-path="running-your-survey.html"><a href="running-your-survey.html#stopping-your-survey"><i class="fa fa-check"></i><b>9.4</b> Stopping your survey</a></li>
+<li class="chapter" data-level="9.2" data-path="running-your-survey.html"><a href="running-your-survey.html#sharing-your-survey-with-colleagues"><i class="fa fa-check"></i><b>9.2</b> Sharing your survey with colleagues</a></li>
+<li class="chapter" data-level="9.3" data-path="running-your-survey.html"><a href="running-your-survey.html#stopping-your-survey"><i class="fa fa-check"></i><b>9.3</b> Stopping your survey</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="data-handling-and-security.html"><a href="data-handling-and-security.html"><i class="fa fa-check"></i><b>10</b> Data handling and security</a>
 <ul>
@@ -177,48 +176,44 @@ has told you that).</p>
 <p>It is safe to activate your survey while you are developing it. Click
 the green Activate survey button to do so.</p>
 <p><img src="media/image81.png" /></p>
-<p>Despite the scary warnings in the next pop up, you can add and delete
-things, if you deactivate the survey again, though this will delete any
-data you’ve collected in the meantime so you should not actually collect
-real data until you have thoroughly pilot tested the survey and checked
-its data file. Check that <strong>Date stamp</strong> is On, so you can work out when
-each participant did the survey. Leave the rest Off. You do want
-<strong>Open-access mode</strong> unless you are using a Limesurvey Panel to invite
-people from a mailing list you have set up (not in this guide).</p>
+<p>Despite the scary warnings in the next pop up, you can add and
+delete things, if you deactivate the survey again, though this will
+delete any data you’ve collected in the meantime so you should not
+actually collect real data until you have thoroughly pilot tested the
+survey and checked its data file.
+Check that <strong>Date stamp</strong> is On, so you can work out
+when each participant did the survey. Leave the rest Off.
+You do want <strong>Open-access mode</strong> unless you are using a
+Limesurvey Panel to invite people from a mailing list you have set up
+(not in this guide).</p>
 <p><img src="media/image82.png" style="width:50.0%" /></p>
 <div id="downloading-data" class="section level2 hasAnchor" number="9.1">
 <h2><span class="header-section-number">9.1</span> Downloading data<a href="running-your-survey.html#downloading-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>You can download your data at any time from the <strong>Settings – Survey
 menu</strong> option <strong>Responses.</strong></p>
-<p>Clicking this brings up a screen with information about how many
-responses you have and some options to display them on-screen. However,
-you simply need to click the <strong>Export</strong> button at the top of the screen,
-and choose Export responses.</p>
+<p>Clicking this brings up a screen with information about how many responses you have and some options to display them on-screen. However, you simply need to click the <strong>Export</strong> button at the top of the screen, and choose Export responses.</p>
 <p><img src="media/image83.png" /></p>
 <p>After that the flexibility makes it look complicated, but if you leave
 everything at their defaults you will get a plain CSV file that anything
 can read. The main choice you need to make is on the right, under
 <strong>Headings : Export questions as</strong>:</p>
 <p>Here is an example of how a survey’s data exports with each option:</p>
-<p>Question Code:</p>
-<p><img src="media/image84.png" /></p>
-<p>Abbreviated question text:</p>
-<p><img src="media/image85.png" /></p>
-<p>Full question text:</p>
-<p><img src="media/image86.png" /></p>
-<p>Question code and question text:</p>
-<p><img src="media/image87.png" /></p>
-<p>The last option, <strong>Question code and question text</strong>, is the best from
-an Open-Science point of view, especially if you leave <strong>Export
-responses</strong> as Full answers, as I have here.</p>
+<div class="line-block">Question Code: | <img src="media/image84.png" /> |</div>
+<div class="line-block">Abbreviated question text: | <img src="media/image85.png" /> |</div>
+<div class="line-block">Full question text: | <img src="media/image86.png" /> |</div>
+<div class="line-block">Question code and question text: | <img src="media/image87.png" /> |</div>
+<p>The last option is the best from an Open-Science point of view,
+especially if you leave <strong>Export responses</strong> as Full answers, as I have
+here.</p>
 <p>This data file is fully comprehensible in its own right, without needing
 a copy of the survey to consult to understand what was asked or what the
 answers mean. For analytic purposes, the header row cells start with the
 Question name, the subquestion code in brackets, followed by the
 Question text, and then the subquestion text in brackets.</p>
 <p>It is possible to split this text up in a program like R to keep the
-codes as variable names (e.g., MTF_01 and MTF_02 while preserving the
-question and subquestion text as a vector for labelling output.</p>
+codes as variable names (e.g., SLI_ideal and SLI._ondition while
+preserving the question and subquestion text as a vector for labelling
+output.</p>
 <p>For example, here is some R code to do this:</p>
 <pre><code>data&lt;-read.csv(&quot;results-survey352368.csv&quot;) # read the limesurvey data
 
@@ -230,10 +225,8 @@ var.item&lt;-tibble(cols=colnames(data)) %&gt;% # make a tibble from data&#39;s 
          item=str_sub(cols, str_length(var)+3,-1)) # select everything after the dot
 
 colnames(data)=var.item$var # set columnames in data to var</code></pre>
-<p>It is also advisable to export the <strong>full answer text</strong>, rather than
-Answer codes. Answer Codes turns the data into whatever you had entered
-in the Codes field of the question or numerical values if you had left
-them blank, as here:</p>
+<p>It is advisable to export the full answer text, rather than Answer
+codes:</p>
 <p><img src="media/image88.png" /></p>
 <p>Answer codes look easy to analyse, but what do they mean? Which ones
 need to be reverse coded? Text is meaningful, so export it and make the
@@ -243,57 +236,43 @@ spotted and corrected.</p>
 <p>For example, this R code finds all items beginning MTF, recodes their
 likert scale to numbers, reverse codes some items, and finds the mean
 for each participant:</p>
-<pre><code>mtf&lt;-data %&gt;% select(participant, starts_with(&quot;MTF&quot;)) %&gt;% # select ID and MTF vars
-  pivot_longer(-participant) %&gt;% # make longer (participant, name, value)
-  mutate(rating=case_when( # create a new variable called rating
+<pre><code>mtf&lt;-data %&gt;% select(-participant, starts_with(&quot;MTF&quot;)) %&gt;% # select ID and MTF vars
+  pivot_longer(-participant) %&gt;% # make longer (name, value)
+  mutate(rating=case_when( # create a new variable rating
                  value==&quot;Strongly agree&quot; ~ 5, # matching each text to a number
                  value==&quot;Agree&quot; ~ 4,
                  value==&quot;Neither agree nor disagree&quot; ~ 3
                  value==&quot;Disagree&quot; ~ 2,
                  value==&quot;Strongly disagree&quot; ~ 1,
                  T ~ NA), # anything else is NA
-      rating = ifelse(name %in% c(&quot;MTF_01&quot;, &quot;MTF_03&quot;, &quot;MTF_09&quot;), # if the name is in this list
-                      6-rating, # reverse-code the item
+      rating = ifelse(name %in% c(&quot;MTF1&quot;, &quot;MTF3&quot;, &quot;MTF9&quot;), # if the name is in this list
+                      6-rating, # reverse code the item
                       rating) # else leave it alone
       ) %&gt;%
   group_by(participant) %&gt;% # for each ID
   summarise(mtf=mean(rating, na.rm=T)) # find mean rating, removing NA</code></pre>
 </div>
-<div id="printing-a-copy-of-your-survey" class="section level2 hasAnchor" number="9.2">
-<h2><span class="header-section-number">9.2</span> Printing a copy of your survey<a href="running-your-survey.html#printing-a-copy-of-your-survey" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>You may need to create a PDF of your survey to attach to an Ethics application or to include as an appendix in a report. This is easy to do within the survey.</p>
-<p>To get a printable copy of the survey, click the Export button at the
-top of the screen :</p>
-<p><img src="media/image96.png" /></p>
-<p>Then select Printable from the options available. This will let you print or save a copy of your survey (print to PDF).</p>
-<p><img src="media/image88a.png" /></p>
-</div>
-<div id="sharing-your-survey-with-colleagues" class="section level2 hasAnchor" number="9.3">
-<h2><span class="header-section-number">9.3</span> Sharing your survey with colleagues<a href="running-your-survey.html#sharing-your-survey-with-colleagues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Nobody can see your survey or data except you and the local site
-administrators. If you are working in a group you might want other
-Limesurvey users to be able to view or edit your survey or access the
-data. You can add users to a survey from the <strong>Settings</strong> menu, under
-<strong>Survey Permissions</strong>. Select a User from the <strong>User: Please choose…’</strong>
-dropdown list, and click <strong>Add User</strong>.</p>
+<div id="sharing-your-survey-with-colleagues" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Sharing your survey with colleagues<a href="running-your-survey.html#sharing-your-survey-with-colleagues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you are working in a group you might want other Limesurvey users to
+be able to view or edit your survey or access the data. We have found
+that only users who have access to all other users’ surveys can do this,
+so students cannot but academic staff can. If you are a student, please
+ask your supervisor to add other students to your survey.</p>
+<p>If you are academic staff, then you can add users to a survey from the
+<strong>Settings</strong> menu, under <strong>Survey Permissions</strong>. Select a User from the
+<strong>‘Please choose…’</strong> dropdown list, and click <strong>Add User</strong>. There is
+also a feature to add whole groups of Users, but this is not available
+in our default settings, so ask if you need it.</p>
 <p><img src="media/image89.png" /></p>
-<p>This allows them to see (‘read’) the survey but nothing else. You also
-need to grant them ‘permissions’ by clicking the … icon at the right
-of their row in the list of users and select <strong>Edit permissions</strong>. Set
-them like this by checking the <strong>General</strong> box on a row (the others are
-then filled in for you)</p>
-<p><img src="media/image89a.png" style="width:50.0%" /></p>
-<p>There is also an option to add a whole Group of users, but we advise
-against doing this because you can only remove people one at a time and
-the edit permissions screen is currently buggy.</p>
 </div>
-<div id="stopping-your-survey" class="section level2 hasAnchor" number="9.4">
-<h2><span class="header-section-number">9.4</span> Stopping your survey<a href="running-your-survey.html#stopping-your-survey" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="stopping-your-survey" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Stopping your survey<a href="running-your-survey.html#stopping-your-survey" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>When you have finished piloting your survey and need to make changes, or
 when you have run it properly and finished collecting data, you can Stop
 the survey to prevent any more responses being made. When it is running
 the green Activate Survey becomes a red button:</p>
-<p><img src="media/image90.png" /></p>
+<p><img src="media/image90.png" /> s</p>
 <p>Clicking this brings up a choice:</p>
 <p><img src="media/image91.png" /></p>
 <p>If you have indeed finished collecting data, then the left hand <strong>Expire
@@ -370,7 +349,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": null,
 "search": {
 "engine": "fuse",
 "options": null
