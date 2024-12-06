@@ -181,23 +181,20 @@ other survey platforms you may know this as Skip Logic or Branching.</p>
 <p>With Limesurvey’s ability to conditionally display questions depending
 upon the value of previous answers, there is no need for branching – you
 just set a question or group’s condition so that it is not displayed.</p>
-<p>Even better, you can make questions appear when another question has
-been answered, as we did when we made Sex dependent upon the value of
-Age that people entered.</p>
+<p>Even better, you can make questions appear only when another question
+has been answered in a relevant way.</p>
 <p>In this respect, Limesurvey is much simpler and more flexible than other
 platforms.</p>
 <p>To demonstrate how this works, we will make people who do not consent
-skip past the questions to see a Sorry message,
-and add Thank you people for people who did consent and
-who have done the survey.</p>
+skip past the questions to see a Sorry message, and add Thank you people
+for people who did consent and who have done the survey.</p>
 <div id="make-a-question-group-conditional" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Make a question group conditional<a href="branch-to-different-pages-depending-on-participants-answers.html#make-a-question-group-conditional" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you preview your survey, you will find that even if
-you say No to the consent question, the survey carries on to ask you
-your Sex and Age.</p>
-<p>We need to set a condition for the Demographics group, and any other questions,
-so that it is
-only shown when Consent has been given and the answer recorded is Y.</p>
+<p>If you preview your survey, you will find that even if you say No to the
+consent question, the survey carries on to ask you your Sex and Age.</p>
+<p>We need to set a condition for the Demographics group, and any other
+questions, so that it is only shown when Consent has been given and the
+answer recorded is Y.</p>
 <p><img src="media/image36.png" /></p>
 <p>To do this, click the Demographics group name to see the Group Summary,
 and then click <strong>Edit</strong>. At the bottom of the page, set the
@@ -206,7 +203,8 @@ and then click <strong>Edit</strong>. At the bottom of the page, set the
 <p>You are entering some computer code that specifies the question name on
 the left, and the value it has to have on the right. Be careful to get
 these exactly correct – case matters.</p>
-<p>Also make sure to use plain straight quote marks, not “smart” or curly quotes.</p>
+<p>Also make sure to use plain <code>"</code>straight<code>"</code> quote marks, not “smart”
+curly quotes.</p>
 <p>There are two things that might seem odd here:</p>
 <ol style="list-style-type: decimal">
 <li><p>You need two equals signs because in computer coding, two == is a
@@ -215,9 +213,11 @@ one = sign is an operator that <em>makes</em> something be equal to a
 value.</p></li>
 <li><p>The buttons said Yes and No, but the value recorded is Y or N</p></li>
 </ol>
-<p>When you click <strong>Save and close</strong> to return to the summary, it now shows this:</p>
+<p>When you click <strong>Save and close</strong> to return to the summary, it now shows
+this:</p>
 <p><img src="media/image38.png" /></p>
-<p>If you make mistakes, you may see this instead – the red box shows that Limesurvey does not know of a question called ‘consent’ with a little c</p>
+<p>If you make mistakes, you may see this instead – the red box shows that
+Limesurvey does not know of a question called ‘consent’ with a little c</p>
 <p><img src="media/image39.png" /></p>
 <p>If you hover the mouse over the red = sign, it will tell you that you
 are assigning a new value to a variable instead of comparing it. It lets
@@ -230,23 +230,27 @@ diagnostic information.</p>
 <p>Setting a Condition at the Group level means that it applies to all the
 questions in that group. It is easy to change, and most surveys will not
 have many Groups.</p>
-<p>You can also set the Condition at a Question level. If you click
-on Sex, to see the Question Summary, you can see that it has inherited
-the Group relevance setting from the group’s Condition.
-Consent is now green to show that it is a valid question name.
-The Sex question’s condition is set to 1, which means ‘TRUE’ or
-‘Always’ show, provided that the Group is being shown.</p>
+<p>You can also set the Condition at a Question level. If you click on Sex,
+to see the Question Summary, you can see that it has inherited the Group
+relevance setting from the group’s Condition. Consent is now green to
+show that it is a valid question name. The Sex question’s condition is
+set to 1, which means ‘TRUE’ or ‘Always’ show, provided that the Group
+is being shown.</p>
 <p><img src="media/image40.png" /></p>
-<p>Edit the Sex question, and in General Settings, change the Condition
-to Age &gt;= 18</p>
+<p>Edit the Sex question, and in General Settings, change the Condition to
+<code>Age &gt;= 18</code></p>
 <p><img src="media/image41.png" /></p>
 <p>Preview the survey and give consent, and you should then see the Age
 question. Enter an Age value of 18 or more, and the Sex question will
 appear. Change the Age to under 18, and it will vanish. Any value you
 chose for Sex will still be there – all that is changing is whether or
 not the Question is displayed.</p>
-<p>If you want a more complex condition, for example, only people between 18 and 40, then you can combine them using AND
-e.g., Age&gt;=18 AND Age&lt;=40. Alternatively, you could say Age=18 OR Age=40 if you only want 18 and 40 year olds to answer a question. To negate a condition, put an exclamation mark before it, e.g., !(Age=18 OR Age=40) means everyone who is NOT 18 or 40.</p>
+<p>If you want a more complex condition, for example, only people between
+18 and 40, then you can combine them using AND e.g.,
+<code>Age\&gt;=18 AND Age\&lt;=40</code>. Alternatively, you could say <code>Age=18 OR Age=40</code>
+if you only want 18 and 40 year olds to answer a question. To negate a
+condition, put an exclamation mark before it, e.g.,
+<code>!(Age=18 OR Age=40)</code> means everyone who is NOT 18 or 40.</p>
 <p>Being able to make any question’s display conditional on other answers,
 even if they are on the same screen, is a powerful feature of
 Limesurvey.</p>
@@ -264,18 +268,17 @@ move questions between groups.</p>
 </div>
 <div id="add-a-thank-you-and-sorry-message" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Add a Thank You and Sorry Message<a href="branch-to-different-pages-depending-on-participants-answers.html#add-a-thank-you-and-sorry-message" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Add a new group at the end of the survey and name it
-<strong>Thank you</strong>.</p>
+<p>Add a new group at the end of the survey and name it <strong>Thank you</strong>.</p>
 <ul>
-<li><p>Set Condition to Consent==“Y”</p></li>
-<li><p>Add a Text Display question <strong>thankyou</strong> to say
-‘Thank you! Please do not close the browser until you have returned to
-SONA to receive your credit!’</p></li>
+<li><p>Set Condition to <code>Consent=="Y"</code></p></li>
+<li><p>Add a Text Display question <strong>thankyou</strong> to say ‘Thank you! Please
+do not close the browser until you have returned to SONA to receive
+your credit!’</p></li>
 <li><p>Add another block and name it <strong>Sorry</strong>.</p></li>
-<li><p>Set Condition to Consent==“N”</p></li>
-<li><p>Add a Text Display question <strong>sorry</strong> to this block
-to say ‘Sorry that you do not want to participate. Please close the
-browser window now.’</p></li>
+<li><p>Set Condition to <code>Consent=="N"</code></p></li>
+<li><p>Add a Text Display question <strong>sorry</strong> to this block to say ‘Sorry
+that you do not want to participate. Please close the browser window
+now.’</p></li>
 </ul>
 <p><img src="media/image69.png" /></p>
 <p>Preview your survey and try giving and not giving consent.</p>
