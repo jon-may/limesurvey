@@ -189,6 +189,36 @@ You can now add more items as different subquestions
 
 ![ ](media/image59.png)
 
+ 
+## Adding Images or Movies
+If you ever need to add an image or movie to a question (or to Text)
+then there are three buttons on the toolbar that allow you to do this.
+They either need to be stored elsewhere on the internet (so you can
+provide a URL) or you can upload them to psyserver. For example, adding
+a simple image can be done by clicking the
+![ ](media/image16.png) button. In the dialog that
+appears, click **Browse Server** to get the
+![ ](media/image17.png) option and find a file on
+your computer to upload:
+
+![ ](media/image18.png){width=50%}
+
+![ ](media/image19.png){width=50%}
+
+
+To select the image you have uploaded, double-click it. Depending on its
+size, it might not all show in the preview box of the Image dialog, so
+you can enter a sensible display width or height (the other will be
+calculated):
+
+![ ](media/image20.png){width=50%}
+
+When you have added a picture to the top of your Information Text,
+click the green **Save** button and then
+**preview** **question**.
+
+![ ](media/image21.png)
+
 
 ## Duplicating questions
 
@@ -211,3 +241,23 @@ Notice that you have options about what to copy over. Leave them all as
 **Yes**, and click **Save and close**. Edit the SliderCopy question and
 change the question to ‘How long would it take you to eat...’.
 
+## Saving lists of subquestions and answer options for reuse
+Make a copy of Breakfast, name it Favourite, and turn it into a Single
+choice question **List (radio)**. Oh no, all the sub-questions have
+vanished! Save and close.
+
+Return to Breakfast and **Edit** it. Click **Save Label set** underneath
+the subquestions – choose **New label set** and name it breakfast items.
+
+![ ](media/image70.png)
+
+
+Return to Favourite, and click **Load label set**, then select breakfast
+items (the example here shows other label sets I’ve saved previously.
+
+![ ](media/image71.png)
+
+The Answer options should be filled with the list you had saved. Save
+and preview.
+
+![ ](media/image72.png)

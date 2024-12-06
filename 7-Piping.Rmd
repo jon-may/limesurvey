@@ -1,34 +1,14 @@
-# Pipe answers from one question into a later question
+# Using answers from one question in a later question
 
 You might want to include one answer in a subsequent question, e.g.,
 after asking ‘What do you crave most’, and having them choose
 ‘chocolate’, you might want to ask ‘How often to you crave chocolate?’.
 You don’t want to write a different question for every option in the
 first question, but to replace chocolate with whatever they answered.
+
 This is called Piping.
 
-Make a copy of Breakfast, name it Favourite, and turn it into a Single
-choice question **List (radio)**. Oh no, all the sub-questions have
-vanished! Save and close.
-
-
-## Saving lists of subquestions and answer options for reuse
-
-Return to Breakfast and **Edit** it. Click **Save Label set** underneath
-the subquestions – choose **New label set** and name it breakfast items.
-
-![ ](media/image70.png)
-
-
-Return to Favourite, and click **Load label set**, then select breakfast
-items (the example here shows other label sets I’ve saved previously.
-
-![ ](media/image71.png)
-
-The Answer options should be filled with the list you had saved. Save
-and preview.
-
-![ ](media/image72.png)
+For example, if you have created the Favourite question which asked people what their Favourite food is, you might then want to ask how often they eat it.
 
 
 ## Piping a List question answer
@@ -37,7 +17,8 @@ Insert a new **Single choice question** named Frequency, and make it a
 **List (radio)**
 
 Make the text ‘How many days a week do you eat {Favourite.shown}’ and
-set **Hide tip** to On. Save and close, then preview the Group.
+set **Hide tip** to On. Save and close, then preview the Group. Make sure to use the special
+curly braces, on the right side of the keyboard (Shift-square bracket).
 
 ![ ](media/image73.png)
 
@@ -60,10 +41,10 @@ question.
 
 ## Piping answers from a multiple choice or array question
 
-Where there are more than one aswer for a question, you need to include
+Where there is more than one aswer for a question, you need to include
 the name of the subquestion in the piping, e.g., {Breakfast_toast.shown}
 – notice that the question and subquestion are separated by an
-underscore.
+underscore (not a dash - ! Underscore is typed using Shift-dash).
 
 Try adding a question called Chosen as a **Long Free Text** item, with all ten of the breakfast items on separate lines, and move it immediately after the Breakfast question.
 
@@ -99,4 +80,6 @@ The condition !is_empty(UCAS_Uni1) means ‘if UCAS_Uni1 is not empty’, so
 this question would only be shown if the box for Uni1 had been filled
 in. This avoids the question ‘Did you visit at any of the following’
 being displayed when Uni1 is left empty.
+
+For the official documentation on all of the [functions](https://www.limesurvey.org/manual/Expression_Manager#Implemented_Functions), [operators](https://www.limesurvey.org/manual/Expression_Manager#Operators), and how to refer to [questions](https://www.limesurvey.org/manual/Expression_Manager#Access_to_Variables) and their attributes, there is detailed help  in the [Limesurvey manual](https://www.limesurvey.org/manual). 
 

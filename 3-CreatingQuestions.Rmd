@@ -1,5 +1,13 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Creating questions
+
 ## Age and Sex
+
 After the consent page, it is common to ask for demographic variables
 such as age and sex. It is better to collect these at the start of the
 survey, and not at the end, in case people drop out during the survey.
@@ -11,15 +19,15 @@ You can run statistical tests for selective drop out by sex or age
 To show these on a new page, click **Add Group**, and give the Group the
 **Title** Demographics. Here is no need to add a **Description**.
 
-![ ](media/image27.png)
+![](media/image27.png)
 
 Click **Save**, and then **Add Question**. Name your new question Sex.
 
 ## Always Name your questions
 
-**Naming questions is essential**. These names will be used as
-the columns in your data file, and in using other survey features, so
-they should be short, informative and not contain spaces or other
+**Naming questions is essential**. These names will be used as the
+columns in your data file, and in using other survey features, so they
+should be short, informative and not contain spaces or other
 punctuation. If you need to use more than one word, or need to add
 numbers, then use an underscore e.g., ‘Scale_Before’ and ‘Scale_After’.
 Using an underscore as a 'delimiter' makes it easy to preprocess the
@@ -34,19 +42,19 @@ you like, but for now please use **Single Choice Questions** and choose
 allow one option to be chosen, unlike checkboxes, which allow several
 options to be chosen).
 
-![ ](media/image28.png)
+![](media/image28.png)
 
-![ ](media/image29.png)
+![](media/image29.png)
 
 Make the question something like ‘What sex are you?’.
 
 Enter the options in the **Answer options** section under the
 **Question** box.
 
-![ ](media/image30.png)
+![](media/image30.png)
 
 Change the text ‘Some example answer option to ‘Female’, then click the
-green ![ ](media/image31.png) and type ‘Male’.
+green ![](media/image31.png) and type ‘Male’.
 
 Before continuing, change the **Code** boxes too. This is not essential,
 but it is a very good thing to do because it will make your data file
@@ -54,8 +62,7 @@ more readable and makes later things easier to do as well. The shorter
 your Code is while still being meaningful the better, so lets use F, M
 and DNS.
 
-![ ](media/image32.png)
-
+![](media/image32.png)
 
 What other options apart from Male and Female might you want to add?
 Obviously it is possible that you might have participants who do not
@@ -72,7 +79,7 @@ If you want to have an Other option that allows people to type their own
 response then on the right hand side, set **Other** to On. Click
 **Save** and **Preview the Question:**
 
-![ ](media/image33.png)
+![](media/image33.png)
 
 ## Mandatory questions
 
@@ -83,7 +90,6 @@ the rest of your survey, so think carefully about how essential it is to
 obtain the data you are asking for and use it sparingly. In this case,
 leave **Mandatory** at Off (in analysis, you can recode missing answers
 as ‘Do not wish to say’)
-
 
 ## Asking for a number
 
@@ -99,16 +105,14 @@ analyse – you cannot find a mean from text.
 To force people to enter a number, create a new question and select
 **Mask questions, Numerical input**
 
-![ ](media/image34.png)
+![](media/image34.png)
 
 Name this question Age, and then enter the question text ‘How old were
 you at your last birthday (whole years)’.
 
-While editing this question, you can change the amount of space provided for the answer from the whole width of the screen to a smaller size – in the settings on the right, click **Display**, and change the **Text input box width** to 17%.
+While editing this question, you can change the amount of space provided
+for the answer from the whole width of the screen to a smaller size – in
+the settings on the right, click **Display**, and change the **Text
+input box width** to 17%.
 
-![ ](media/image35.png)
-
-
-
-
-
+![](media/image35.png)
