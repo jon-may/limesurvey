@@ -219,6 +219,7 @@ click the green **Save** button and then
 
 ![ ](media/image21.png)
 
+You can also add images, and I suppose videos, to the text for Questions, Subquestions and Answer options, using the pencil icon at the right of the space for entering text to open the HTML editor. 
 
 ## Duplicating questions
 

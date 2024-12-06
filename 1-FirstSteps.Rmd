@@ -25,35 +25,37 @@ complicated to use. The school has its own implementation, running on
 our own servers, administered by the Technical Office. If you need
 anything more than a simple fixed set of questions, use Limesurvey.
 
+In the rest of this Guide, **Limesurvey** refers to the software while
+**psysurvey** refers to our implementation of it.
+
 ### How to get an Account and Login
 
 In a browser, visit <https://psysurvey.plymouth.ac.uk>
 
-Academic staff will have accounts created for them, but students can
-create their own.
+Academic staff and students have accounts created for them, and you just
+need to set the password to access them
 
-To create your account, click the ‘Forgot your password?’ link and use
-your UoP email address and password.
-
-</p>
-
-<p>If asked for your username, use your email address.</p>
-
-</th>
+To do this, click the ‘Forgot your password?’ link.
 
 ![](media/image1.png){width="50%"}
 
-You will be sent an email with a link to create your password. Once you
-have created a valid password, you can log in.
+Use your UoP email address for both your username and your email
+address. You will be sent an email with a link to create your password.
+Once you have created a valid password, you can log in.
+
+If this does not work then you have not had an account created. Please
+email [technical support](tech.psy@plymouth.ac.uk) and ask them to
+create your account on psysurvey. If you are in a workshop, ask the
+workshop leader to do this for you.
 
 When you first log in, you will see this screen, allowing you to List
-the surveys you have created. If you click the button
-![](media/image2.png) you will (of course) see no surveys yet. You can
-access this list at any time by clicking Surveys in the top menu bar.
+the surveys you have created.
+
 ![](media/image3.png){width="50%"}
 
-NB: If you are a member of academic staff you will be able to see all
-existing surveys.
+If you click the button ![](media/image2.png){width="100" height="38"}
+you will (of course) see no surveys yet. You can access this list at any
+time by clicking Surveys in the top menu bar.
 
 ## Create a new survey
 
@@ -67,12 +69,12 @@ survey
 
 ![](media/image5.png){width="50%"}
 
-Your survey will look like this – Limesurvey automatically creates a
-Question for you (called ‘Q00’) and puts it into a Question Group called
-‘My first question group’. Putting questions in groups lets you organise
-your survey, and is an essential part of randomisation or presenting
-questions in a set order. Before editing this question, notice the
-details on this screen:
+Your survey will look like the example below – Limesurvey automatically
+creates a Question for you (called ‘Q00’) and puts it into a Question
+Group called ‘My first question group’. Putting questions in groups lets
+you organise your survey, and is an essential part of randomisation or
+presenting questions in a set order. Before editing this question,
+notice the details on this screen:
 
 ![](media/image6.png)
 
