@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>8 Redirect to another website or SONA | Designing an Online Survey in Limesurvey</title>
-  <meta name="description" content="8 Redirect to another website or SONA | Designing an Online Survey in Limesurvey" />
+  <title>7 Using answers from one question in a later question | Designing an Online Survey in Limesurvey</title>
+  <meta name="description" content="7 Using answers from one question in a later question | Designing an Online Survey in Limesurvey" />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="8 Redirect to another website or SONA | Designing an Online Survey in Limesurvey" />
+  <meta property="og:title" content="7 Using answers from one question in a later question | Designing an Online Survey in Limesurvey" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="8 Redirect to another website or SONA | Designing an Online Survey in Limesurvey" />
+  <meta name="twitter:title" content="7 Using answers from one question in a later question | Designing an Online Survey in Limesurvey" />
   
   
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="using-answers-from-one-question-in-a-later-question.html"/>
-<link rel="next" href="running-your-survey.html"/>
+<link rel="prev" href="randomising-items-questions-and-blocks.html"/>
+<link rel="next" href="redirect-to-another-website-or-sona.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -172,95 +172,66 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="redirect-to-another-website-or-sona" class="section level1 hasAnchor" number="8">
-<h1><span class="header-section-number">8</span> Redirect to another website or SONA<a href="redirect-to-another-website-or-sona.html#redirect-to-another-website-or-sona" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>When a participant has finished your survey, you may want them to do
-something else, or grant them participation credit by returning to SONA.</p>
-<p>If you want them to do an experiment, you might want to send them to a
-URL for your study, on JATOS.</p>
-<p>Depending on the answers they have given to a question you might want to send them to different places,
-for example, if you have a prize draw you might have a question that asks if they want to be entered, and
-then send them to a separate survey to collect an email address (you should NEVER collect such personal data in your main survey).
-Another possibility might be that they failed an attention check, so you do not want to give them participation points.</p>
-<p>Wherever you want them to go, the destination is set in the <strong>Settings &gt; Text Elements</strong> option, in the
-<strong>End URL</strong> field. For example, this will send them to the University of Plymouth home page at the end of the survey (not very useful).</p>
-<p><img src="media/EndURL02.png" /></p>
-<div id="conditional-redirecting" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Conditional redirecting<a href="redirect-to-another-website-or-sona.html#conditional-redirecting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Suppose you have a prize draw entry question and want to send them to a url <a href="http://bit.ly/prizedraw.html" class="uri">http://bit.ly/prizedraw.html</a> if they say “Yes” but to <a href="http://bit.ly/noprizedraw.html" class="uri">http://bit.ly/noprizedraw.html</a> if they say “No”.</p>
-<p>In <strong>Settings &gt; Text Elements</strong>, find the
-<strong>End URL</strong> field, and enter an {if(variable==value,then-do-this, else-do-this)} statement, e.g.,</p>
-<p><img src="media/EndURL01.png" /></p>
-<p>You can make complicated conditions by nesting if() statements in the then-do-this or else-do-this parts of the main if().</p>
+<div id="using-answers-from-one-question-in-a-later-question" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">7</span> Using answers from one question in a later question<a href="using-answers-from-one-question-in-a-later-question.html#using-answers-from-one-question-in-a-later-question" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>You might want to include one answer in a subsequent question, e.g.,
+after asking ‘What do you crave most’, and having them choose
+‘chocolate’, you might want to ask ‘How often to you crave chocolate?’.
+You don’t want to write a different question for every option in the
+first question, but to replace chocolate with whatever they answered.</p>
+<p>This is called Piping.</p>
+<p>For example, if you have created the Favourite question which asked people what their Favourite food is, you might then want to ask how often they eat it.</p>
+<div id="piping-a-list-question-answer" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Piping a List question answer<a href="using-answers-from-one-question-in-a-later-question.html#piping-a-list-question-answer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Insert a new <strong>Single choice question</strong> named Frequency, and make it a
+<strong>List (radio)</strong></p>
+<p>Make the text ‘How many days a week do you eat {Favourite.shown}’ and
+set <strong>Hide tip</strong> to On. Save and close, then preview the Group. Make sure to use the special
+curly braces, on the right side of the keyboard (Shift-square bracket).</p>
+<p><img src="media/image73.png" /></p>
+<p>Before you click an option in Favourite, the Frequency question is just
+‘How often do you eat?’. As soon as you select an option, that answer is
+pasted in. If you change your selection, the Frequency question updates
+too.</p>
+<p>When you are using piping, make sure that every possible answer works
+grammatically. Problems can be caused by options that vary in number, or
+questions that have ‘a’ or ‘an’ before the piped text, e.g. <em>What are
+you most afraid of, <strong>spiders</strong> or an <strong>elephant</strong>?</em> followed by ‘<em>What
+would you do if you saw a [piped text]</em>’</p>
+<p>Putting the name of a question followed by ‘.shown’ in curly brackets as
+in the List question example will generally work, unless there are
+multiple questions for an answer, as in an Array or Multiple Choice
+question.</p>
 </div>
-<div id="using-limesurvey-with-sona" class="section level2 hasAnchor" number="8.2">
-<h2><span class="header-section-number">8.2</span> Using Limesurvey with SONA<a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you are using the SONA participant pool, then every person who signs
-up to do your survey is given a unique participant ID number. You can
-send this to Limesurvey, then get Limesurvey to send the ID back to SONA
-at the end of the survey so that SONA can grant credits.</p>
-<p>On SONA, change the Study URL so it includes &amp;id=%SURVEY_CODE% in the
-URL. So if the LimeSurvey URL is:</p>
-<pre><code>https://psysurvey.plymouth.ac.uk/index.php?r=survey/index&amp;sid=/651365&amp;/lang-en</code></pre>
-<p>then change it to</p>
-<pre><code>https://psysurvey.plymouth.ac.uk/index.php?r=survey/index&amp;sid=/651365&amp;/lang-en
-&amp;id=%SURVEY_CODE%</code></pre>
-<p><strong>About URLS:</strong> when you put a ? at the end of a URL, everything that
-follows is a sequence of parameter names and values which the receiving
-web page can use. In this case, we are just sending one parameter,
-called id, and it takes the value %SURVEY_CODE% - this is actually
-replaced by SONA with the participant’s unique participant ID.</p>
-<p>The Study Information on SONA now also displays a URL labeled
-“LimeSurvey End URL”.</p>
-<p>In LimeSurvey, configure the survey to accept the id number, as URL
-Parameter named id. To do this, go to <strong>Settings &gt; Survey menu &gt; Panel
-Integration</strong> and click <strong>Add URL parameter</strong> . name it <strong>id</strong> and leave
-the target question unspecified. Remember to use lower-case as this is
-case-sensitive.</p>
-<p><img src="media/image78.png" /></p>
-<p><img src="media/image79.png" /></p>
-<p>To return the information to SONA, you need to add an End URL. This is
-the ‘Limesurvey End URL’ value shown in SONA. It will be something like
-this one:</p>
-<pre><code>https://uopsop.sona-systems.com/
-webstudy_credit.aspx?experiment_id=123&amp;credit_token=4e48f9b638a&amp;
-survey_code={PASSTHRU:id}</code></pre>
-<p>Copy it, go back to Limesurvey’s <strong>Settings &gt; Text Elements</strong>, find the
-<strong>End URL</strong> field, and paste.</p>
-<p><img src="media/image80.png" /></p>
-<p>There is a problem here though – people who do not consent will also
-receive credit. To fix this we need to turn this into some evaluated
-code with a condition:</p>
-<pre><code>{if(Consent==&quot;N&quot;, &quot;https://uopsop.sona-systems.com/&quot;,
-&quot;https://uopsop.sona-systems.com/
-webstudy_credit.aspx?experiment_id=123&amp;credit_token=4e48f9b638a&amp;
-survey_code={PASSTHRU:id}&quot;)}</code></pre>
-<p>This is a bunch to type, but you can just use this example and carefully paste your own experiment_id and credit_token values into it.</p>
-<p>If you try to do this in Word, beware
-Word’s helpful smart quotes feature which will turn the straight quotes
-into curved ones, which will not work in Limesurvey.</p>
+<div id="piping-answers-from-a-multiple-choice-or-array-question" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Piping answers from a multiple choice or array question<a href="using-answers-from-one-question-in-a-later-question.html#piping-answers-from-a-multiple-choice-or-array-question" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Where there is more than one aswer for a question, you need to include
+the name of the subquestion in the piping, e.g., {Breakfast_toast.shown}
+– notice that the question and subquestion are separated by an
+underscore (not a dash - ! Underscore is typed using Shift-dash).</p>
+<p>Try adding a question called Chosen as a <strong>Long Free Text</strong> item, with all ten of the breakfast items on separate lines, and move it immediately after the Breakfast question.</p>
+<p><img src="media/image74.png" /></p>
+<p>If you preview the group, then you will see the item text of all checked
+items appear in the list as soon as you select them. If they are
+unselected, there isn’t even a blank line.</p>
 </div>
-<div id="using-limesurvey-with-jatos-and-opensesame" class="section level2 hasAnchor" number="8.3">
-<h2><span class="header-section-number">8.3</span> Using Limesurvey with JATOS and OpenSesame<a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Sending a participant to JATOS instead of SONA is done in the same way,
-except that you will paste in the URL for your experiment on JATOS
-instead.</p>
-<p>You can pass the participant id using the <code>?id={PASSTHRU:id}</code> option.</p>
-<p>In your OpenSesame experiment, you need to have added inline javascript
-as the first event to receive the parameters and copy them into JATOS
-variables, so that they are saved in the data file:</p>
-<pre><code>try{vars.participant_URL_ID =
-jatos.urlQueryParameters.id}catch(e){vars.participant_URL_ID =0}</code></pre>
-<p>At the end of your experiment, you need to send the code back to SONA
-(or to another survey), e.g.</p>
-<pre><code>try{jatos.endStudyAndRedirect(&quot;https://uopsop.sona-systems.com/
-webstudy_credit.aspx?experiment_id=4221&amp;
-credit_token=84720f17f1724a69b9c23b1a1ae945d9&amp;survey_code=&quot; +
-vars.participant_URL_ID);}catch(e){}</code></pre>
-<p>If you are able to write OpenSesame experiments and use the JATOS
-server, then you can probably work out how to do this, so I am just
-including the info here to let you know that it is possible and it does
-work.</p>
+<div id="piping-answers-from-one-question-into-another" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Piping answers from one question into another<a href="using-answers-from-one-question-in-a-later-question.html#piping-answers-from-one-question-into-another" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Previous answers can be included in lots of other places, such as
+subquestions, answer options and conditions. For example, this question
+lets people list five Universities and records them in the fields Uni1
+to Uni5</p>
+<p><img src="media/image75.png" /></p>
+<p>The question looks like this in the survey:</p>
+<p><img src="media/image76.png" /></p>
+<p>You can then use these answers anywhere else in your survey, for
+example, in the conditions for a later question:</p>
+<p><img src="media/image77.png" /></p>
+<p>The condition !is_empty(UCAS_Uni1) means ‘if UCAS_Uni1 is not empty’, so
+this question would only be shown if the box for Uni1 had been filled
+in. This avoids the question ‘Did you visit at any of the following’
+being displayed when Uni1 is left empty.</p>
+<p>For the official documentation on all of the <a href="https://www.limesurvey.org/manual/Expression_Manager#Implemented_Functions">functions</a>, <a href="https://www.limesurvey.org/manual/Expression_Manager#Operators">operators</a>, and how to refer to <a href="https://www.limesurvey.org/manual/Expression_Manager#Access_to_Variables">questions</a> and their attributes, there is detailed help in the <a href="https://www.limesurvey.org/manual">Limesurvey manual</a>.</p>
 
 </div>
 </div>
@@ -269,8 +240,8 @@ work.</p>
           </div>
         </div>
       </div>
-<a href="using-answers-from-one-question-in-a-later-question.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="running-your-survey.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="randomising-items-questions-and-blocks.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="redirect-to-another-website-or-sona.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
