@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Creating questions | Designing an Online Survey in Limesurvey</title>
   <meta name="description" content="3 Creating questions | Designing an Online Survey in Limesurvey" />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Creating questions | Designing an Online Survey in Limesurvey" />
   <meta property="og:type" content="book" />
@@ -95,6 +95,7 @@
 <li class="chapter" data-level="3.4" data-path="creating-questions.html"><a href="creating-questions.html#create-a-single-choice-question"><i class="fa fa-check"></i><b>3.4</b> Create a single choice question</a></li>
 <li class="chapter" data-level="3.5" data-path="creating-questions.html"><a href="creating-questions.html#mandatory-questions"><i class="fa fa-check"></i><b>3.5</b> Mandatory questions</a></li>
 <li class="chapter" data-level="3.6" data-path="creating-questions.html"><a href="creating-questions.html#asking-for-a-number"><i class="fa fa-check"></i><b>3.6</b> Asking for a number</a></li>
+<li class="chapter" data-level="3.7" data-path="creating-questions.html"><a href="creating-questions.html#checking-the-input"><i class="fa fa-check"></i><b>3.7</b> Checking the input</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html"><i class="fa fa-check"></i><b>4</b> Branch to different pages depending on participants answers</a>
 <ul>
@@ -264,6 +265,22 @@ for the answer from the whole width of the screen to a smaller size – in
 the settings on the right, click <strong>Display</strong>, and change the <strong>Text
 input box width</strong> to 17%.</p>
 <p><img src="media/image35.png" /></p>
+</div>
+<div id="checking-the-input" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> Checking the input<a href="creating-questions.html#checking-the-input" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Although choosing Numerical input prevents your participants from
+entering text, they could still enter nonsense such as a negative number
+or 9999. You can prevent this by using setting maximum and minimum
+values, and forcing the number to be an integer.</p>
+<p>To do this, use the Input section on the right. When you have a
+numerical input question, it looks like this:</p>
+<p><img src="media/image35a.png" style="width:50.0%" /></p>
+<p>Here setting the <strong>Minimum value</strong> to 0 allows people to admit that they
+are under 18, and you could use Conditions on all of your question
+groups to prevent people under 18 from doing your survey. Setting the
+<strong>Maximum value</strong> to 120 allows very old people to enter their age, but
+not people who are mashing the keyboard. Switching <strong>Integer only</strong> to
+On stops people from entering decimal numbers.</p>
 
 </div>
 </div>
@@ -315,7 +332,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": null,
 "search": {
 "engine": "fuse",
 "options": null
