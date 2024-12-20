@@ -116,3 +116,22 @@ the settings on the right, click **Display**, and change the **Text
 input box width** to 17%.
 
 ![](media/image35.png)
+
+## Checking the input
+
+Although choosing Numerical input prevents your participants from
+entering text, they could still enter nonsense such as a negative number
+or 9999. You can prevent this by using setting maximum and minimum
+values, and forcing the number to be an integer.
+
+To do this, use the Input section on the right. When you have a
+numerical input question, it looks like this:
+
+![](media/image35a.png){width="50%"}
+
+Here setting the **Minimum value** to 0 allows people to admit that they
+are under 18, and you could use Conditions on all of your question
+groups to prevent people under 18 from doing your survey. Setting the
+**Maximum value** to 120 allows very old people to enter their age, but
+not people who are mashing the keyboard. Switching **Integer only** to
+On stops people from entering decimal numbers.
