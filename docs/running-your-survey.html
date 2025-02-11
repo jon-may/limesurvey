@@ -95,6 +95,7 @@
 <li class="chapter" data-level="3.4" data-path="creating-questions.html"><a href="creating-questions.html#create-a-single-choice-question"><i class="fa fa-check"></i><b>3.4</b> Create a single choice question</a></li>
 <li class="chapter" data-level="3.5" data-path="creating-questions.html"><a href="creating-questions.html#mandatory-questions"><i class="fa fa-check"></i><b>3.5</b> Mandatory questions</a></li>
 <li class="chapter" data-level="3.6" data-path="creating-questions.html"><a href="creating-questions.html#asking-for-a-number"><i class="fa fa-check"></i><b>3.6</b> Asking for a number</a></li>
+<li class="chapter" data-level="3.7" data-path="creating-questions.html"><a href="creating-questions.html#checking-the-input"><i class="fa fa-check"></i><b>3.7</b> Checking the input</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="branch-to-different-pages-depending-on-participants-answers.html"><a href="branch-to-different-pages-depending-on-participants-answers.html"><i class="fa fa-check"></i><b>4</b> Branch to different pages depending on participants answers</a>
 <ul>
@@ -222,14 +223,14 @@ Question text, and then the subquestion text in brackets.</p>
 codes as variable names (e.g., MTF_01 and MTF_02 while preserving the
 question and subquestion text as a vector for labelling output.</p>
 <p>For example, here is some R code to do this:</p>
-<pre><code>data&lt;-read.csv(&quot;results-survey352368.csv&quot;) # read the limesurvey data
+<pre><code>data&lt;-read.csv(&quot;results-survey531857-5.csv&quot;) # read the limesurvey data
 
 var.item&lt;-tibble(cols=colnames(data)) %&gt;% # make a tibble from data&#39;s columnames
-  mutate(cols=str_replace_all(cols,&quot;[&quot;,&quot;_&quot;), # replace [ with _
-         cols=str_replace_all(cols,&quot;]&quot;,&quot;&quot;), # delete ]
-         var=str_extract(cols, &quot;[A-Za-z0-9_]*.&quot;), # select all text up to first dot
-         var=str_sub(var, 1, -2), # delete the dot
-         item=str_sub(cols, str_length(var)+3,-1)) # select everything after the dot
+           mutate(cols=str_replace(cols,&quot;\\.\\.&quot;,&quot;_&quot;),      # replace .. with _
+                  var=str_extract(cols, &quot;[A-Za-z0-9\\.]*&quot;), # select all text up to _
+                  item=str_sub(cols, str_length(var)+1,-1), # select everything after the _
+                  item=str_replace_all(item, &quot;_&quot;, &quot;&quot;)       # delete the _
+                  )
 
 colnames(data)=var.item$var # set columnames in data to var</code></pre>
 <p>It is also advisable to export the <strong>full answer text</strong>, rather than
