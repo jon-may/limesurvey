@@ -77,14 +77,14 @@ question and subquestion text as a vector for labelling output.
 For example, here is some R code to do this:
 
 ```         
-data<-read.csv("results-survey352368.csv") # read the limesurvey data
+data<-read.csv("results-survey531857-5.csv") # read the limesurvey data
 
 var.item<-tibble(cols=colnames(data)) %>% # make a tibble from data's columnames
-  mutate(cols=str_replace_all(cols,"[","_"), # replace [ with _
-         cols=str_replace_all(cols,"]",""), # delete ]
-         var=str_extract(cols, "[A-Za-z0-9_]*."), # select all text up to first dot
-         var=str_sub(var, 1, -2), # delete the dot
-         item=str_sub(cols, str_length(var)+3,-1)) # select everything after the dot
+           mutate(cols=str_replace(cols,"\\.\\.","_"),      # replace .. with _
+                  var=str_extract(cols, "[A-Za-z0-9\\.]*"), # select all text up to _
+                  item=str_sub(cols, str_length(var)+1,-1), # select everything after the _
+                  item=str_replace_all(item, "_", "")       # delete the _
+                  )
 
 colnames(data)=var.item$var # set columnames in data to var
 ```
