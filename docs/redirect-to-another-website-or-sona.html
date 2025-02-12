@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>8 Redirect to another website or SONA | Designing an Online Survey in Limesurvey</title>
   <meta name="description" content="8 Redirect to another website or SONA | Designing an Online Survey in Limesurvey" />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="8 Redirect to another website or SONA | Designing an Online Survey in Limesurvey" />
   <meta property="og:type" content="book" />
@@ -133,7 +133,10 @@
 <li class="chapter" data-level="8" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html"><i class="fa fa-check"></i><b>8</b> Redirect to another website or SONA</a>
 <ul>
 <li class="chapter" data-level="8.1" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#conditional-redirecting"><i class="fa fa-check"></i><b>8.1</b> Conditional redirecting</a></li>
-<li class="chapter" data-level="8.2" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona"><i class="fa fa-check"></i><b>8.2</b> Using Limesurvey with SONA</a></li>
+<li class="chapter" data-level="8.2" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona"><i class="fa fa-check"></i><b>8.2</b> Using Limesurvey with SONA</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#recording-the-sona-id-in-your-data"><i class="fa fa-check"></i><b>8.2.1</b> Recording the SONA id in your data</a></li>
+</ul></li>
 <li class="chapter" data-level="8.3" data-path="redirect-to-another-website-or-sona.html"><a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame"><i class="fa fa-check"></i><b>8.3</b> Using Limesurvey with JATOS and OpenSesame</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="running-your-survey.html"><a href="running-your-survey.html"><i class="fa fa-check"></i><b>9</b> Running your survey</a>
@@ -179,20 +182,28 @@
 something else, or grant them participation credit by returning to SONA.</p>
 <p>If you want them to do an experiment, you might want to send them to a
 URL for your study, on JATOS.</p>
-<p>Depending on the answers they have given to a question you might want to send them to different places,
-for example, if you have a prize draw you might have a question that asks if they want to be entered, and
-then send them to a separate survey to collect an email address (you should NEVER collect such personal data in your main survey).
-Another possibility might be that they failed an attention check, so you do not want to give them participation points.</p>
-<p>Wherever you want them to go, the destination is set in the <strong>Settings &gt; Text Elements</strong> option, in the
-<strong>End URL</strong> field. For example, this will send them to the University of Plymouth home page at the end of the survey (not very useful).</p>
+<p>Depending on the answers they have given to a question you might want to
+send them to different places, for example, if you have a prize draw you
+might have a question that asks if they want to be entered, and then
+send them to a separate survey to collect an email address (you should
+NEVER collect such personal data in your main survey). Another
+possibility might be that they failed an attention check, so you do not
+want to give them participation points.</p>
+<p>Wherever you want them to go, the destination is set in the <strong>Settings
+&gt; Text Elements</strong> option, in the <strong>End URL</strong> field. For example, this
+will send them to the University of Plymouth home page at the end of the
+survey (not very useful).</p>
 <p><img src="media/EndURL02.png" /></p>
 <div id="conditional-redirecting" class="section level2 hasAnchor" number="8.1">
 <h2><span class="header-section-number">8.1</span> Conditional redirecting<a href="redirect-to-another-website-or-sona.html#conditional-redirecting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Suppose you have a prize draw entry question and want to send them to a url <a href="http://bit.ly/prizedraw.html" class="uri">http://bit.ly/prizedraw.html</a> if they say “Yes” but to <a href="http://bit.ly/noprizedraw.html" class="uri">http://bit.ly/noprizedraw.html</a> if they say “No”.</p>
-<p>In <strong>Settings &gt; Text Elements</strong>, find the
-<strong>End URL</strong> field, and enter an {if(variable==value,then-do-this, else-do-this)} statement, e.g.,</p>
+<p>Suppose you have a prize draw entry question and want to send them to a
+url <a href="http://bit.ly/prizedraw.html" class="uri">http://bit.ly/prizedraw.html</a> if they say “Yes” but to
+<a href="http://bit.ly/noprizedraw.html" class="uri">http://bit.ly/noprizedraw.html</a> if they say “No”.</p>
+<p>In <strong>Settings &gt; Text Elements</strong>, find the <strong>End URL</strong> field, and enter
+an {if(variable==value,then-do-this, else-do-this)} statement, e.g.,</p>
 <p><img src="media/EndURL01.png" /></p>
-<p>You can make complicated conditions by nesting if() statements in the then-do-this or else-do-this parts of the main if().</p>
+<p>You can make complicated conditions by nesting if() statements in the
+then-do-this or else-do-this parts of the main if().</p>
 </div>
 <div id="using-limesurvey-with-sona" class="section level2 hasAnchor" number="8.2">
 <h2><span class="header-section-number">8.2</span> Using Limesurvey with SONA<a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-sona" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -236,10 +247,34 @@ code with a condition:</p>
 &quot;https://uopsop.sona-systems.com/
 webstudy_credit.aspx?experiment_id=123&amp;credit_token=4e48f9b638a&amp;
 survey_code={PASSTHRU:id}&quot;)}</code></pre>
-<p>This is a bunch to type, but you can just use this example and carefully paste your own experiment_id and credit_token values into it.</p>
-<p>If you try to do this in Word, beware
-Word’s helpful smart quotes feature which will turn the straight quotes
-into curved ones, which will not work in Limesurvey.</p>
+<p>This is a bunch to type, but you can just use this example and carefully
+paste your own experiment_id and credit_token values into it.</p>
+<p>If you try to do this in Word, beware Word’s helpful smart quotes
+feature which will turn the straight quotes into curved ones, which will
+not work in Limesurvey.</p>
+<div id="recording-the-sona-id-in-your-data" class="section level3 hasAnchor" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Recording the SONA id in your data<a href="redirect-to-another-website-or-sona.html#recording-the-sona-id-in-your-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You should not normally need to record the SONA id in your data file, as
+doing so is potentially a security risk allowing you or others to look
+up the personal details of a respondent if they have access to SONA.
+However, if you are chaining together several surveys or experiments and
+you need to be able to link the data from the different output files,
+then recording the SONA id is the least worst way to do this.</p>
+<p>To save the id in your data file you need to create a hidden question in
+your survey and link the parameter to it.</p>
+<p>For example, you could create a short/long free text question called
+SONA in the <strong>Question code</strong> field, and from the Display menu enable
+<strong>always hide this question</strong>. Move this question to the start of the
+survey so that is the very first question, even before the Information
+text question. You will need to make sure you have turned off the
+Welcome screen too (you should always do this) in <strong>Settings &gt;
+Presentation</strong>.</p>
+<p>In the Panel Integration dialog, select SONA from the <strong>Target
+question</strong> dropdown. Participants coming from SONA will land on this
+question, but they will not see it, as it is hidden. Their id code will
+be saved as the ‘answer’ to the SONA text question.</p>
+<p><img src="images/clipboard-1424657737.png" width="244" /></p>
+</div>
 </div>
 <div id="using-limesurvey-with-jatos-and-opensesame" class="section level2 hasAnchor" number="8.3">
 <h2><span class="header-section-number">8.3</span> Using Limesurvey with JATOS and OpenSesame<a href="redirect-to-another-website-or-sona.html#using-limesurvey-with-jatos-and-opensesame" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -313,7 +348,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": null,
 "search": {
 "engine": "fuse",
 "options": null
