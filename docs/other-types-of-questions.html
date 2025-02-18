@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Other types of questions | Designing an Online Survey in Limesurvey</title>
   <meta name="description" content="5 Other types of questions | Designing an Online Survey in Limesurvey" />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Other types of questions | Designing an Online Survey in Limesurvey" />
   <meta property="og:type" content="book" />
@@ -180,111 +180,64 @@
 <h1><span class="header-section-number">5</span> Other types of questions<a href="other-types-of-questions.html#other-types-of-questions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="dropdown-lists" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Dropdown lists<a href="other-types-of-questions.html#dropdown-lists" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A dropdown list is an alternative way of presenting answer options that
-can be useful when you have a lot of options that would otherwise take
-up a lot of screen space. They have a disadvantage, in that the
-participant has to click and drag to the right answer rather than just
-click, so some people find them harder to use.
-<em>Avoid dropdown lists if space is not an issue.</em></p>
-<p>Change Sex into a dropdown list by editing it and changing the Question
-type from <strong>List (radio)</strong> to <strong>List (dropdown).</strong></p>
+<p>A dropdown list is an alternative way of presenting answer options that can be useful when you have a lot of options that would otherwise take up a lot of screen space. They have a disadvantage, in that the participant has to click and drag to the right answer rather than just click, so some people find them harder to use. <em>Avoid dropdown lists if space is not an issue.</em></p>
+<p>Change Sex into a dropdown list by editing it and changing the Question type from <strong>List (radio)</strong> to <strong>List (dropdown).</strong></p>
 <p><img src="media/image42.png" /> s</p>
 </div>
 <div id="buttons" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Buttons<a href="other-types-of-questions.html#buttons" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A third way to present items is as a row of buttons. Change Sex to
-Bootstrap buttons, click Save, and the preview question:</p>
+<p>A third way to present items is as a row of buttons. Change Sex to Bootstrap buttons, click Save, and the preview question:</p>
 <p><img src="media/image43.png" /></p>
 <p><img src="media/image44.png" /></p>
-<p>As you can see, the longer answer looks a bit ugly, so take care with
-this style.</p>
+<p>As you can see, the longer answer looks a bit ugly, so take care with this style.</p>
 </div>
 <div id="multiple-answer-questions" class="section level2 hasAnchor" number="5.3">
 <h2><span class="header-section-number">5.3</span> Multiple Answer Questions<a href="other-types-of-questions.html#multiple-answer-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Single answer lists have round ‘radio buttons’ that toggle on and then
-off if people press another one. If you ask people whether they had
-cornflakes or toast for breakfast, and they had both, they may be
-frustrated with your survey.</p>
-<p>Make a new group ‘Questions’, set its Condition to Consent==“Y” and
-click Save.</p>
-<p>Add a new question Breakfast which asks ‘What did you have for
-breakfast’, and under Question Type click <strong>Multiple choice questions,</strong>
-and select <strong>Multiple Choice</strong>.</p>
-<p>We will add several items that you might have for breakfast. Instead of
-adding them one at a time, click <strong>Quick add</strong>. Then add some things
-they might have had.</p>
+<p>Single answer lists have round ‘radio buttons’ that toggle on and then off if people press another one. If you ask people whether they had cornflakes or toast for breakfast, and they had both, they may be frustrated with your survey.</p>
+<p>Make a new group ‘Questions’, set its Condition to Consent==“Y” and click Save.</p>
+<p>Add a new question Breakfast which asks ‘What did you have for breakfast’, and under Question Type click <strong>Multiple choice questions,</strong> and select <strong>Multiple Choice</strong>.</p>
+<p>We will add several items that you might have for breakfast. Instead of adding them one at a time, click <strong>Quick add</strong>. Then add some things they might have had.</p>
 <p><img src="media/image45.png" /></p>
-<p>As the help information says, here we are naming the option as well as
-entering the text to display, separating them with a semicolon (no
-spaces). When you click <strong>Add</strong>, they will all be filled in for you.</p>
-<p>Notice that we still have the example row though – Add will Add to the
-existing options. If you had clicked <strong>Replace</strong>, it would have replaced
-them. You can remove the example by clicking</p>
+<p>As the help information says, here we are naming the option as well as entering the text to display, separating them with a semicolon (no spaces). When you click <strong>Add</strong>, they will all be filled in for you.</p>
+<p>Notice that we still have the example row though – Add will Add to the existing options. If you had clicked <strong>Replace</strong>, it would have replaced them. You can remove the example by clicking</p>
 <p><img src="media/image46.png" /></p>
-<p>Click Save and preview the
-question.</p>
+<p>Click Save and preview the question.</p>
 <p>This format uses checkboxes which show ticks if selected:</p>
 <p><img src="media/image47.png" style="width:50.0%" /></p>
-<p>Ten items take up a lot of space, so you could format them in columns –
-under Display, set Display columns to 3. Save and preview!</p>
-<p>Radio buttons and checkboxes are universally used conventions in
-computer interface design, so you should not need to add explanatory
-text.</p>
-<p>From a data point of view, each option becomes a separate yes/no
-question, so the data file becomes correspondingly larger, <em>and you
-should use these sparingly.</em></p>
+<p>Ten items take up a lot of space, so you could format them in columns – under Display, set Display columns to 3. Save and preview!</p>
+<p>Radio buttons and checkboxes are universally used conventions in computer interface design, so you should not need to add explanatory text.</p>
+<p>From a data point of view, each option becomes a separate yes/no question, so the data file becomes correspondingly larger, <em>and you should use these sparingly.</em></p>
 </div>
 <div id="likert-rating-scales" class="section level2 hasAnchor" number="5.4">
 <h2><span class="header-section-number">5.4</span> Likert Rating Scales<a href="other-types-of-questions.html#likert-rating-scales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Most questionnaires will use some form of rating scale, where people
-have to select one of several ordinal responses. Common examples are
-Likert-type scales, such as:</p>
+<p>Most questionnaires will use some form of rating scale, where people have to select one of several ordinal responses. Common examples are Likert-type scales, such as:</p>
 <p>Strongly Disagree – Disagree – Neither – Agree – Strongly Agree</p>
 <p>Not at all like me – somewhat like me – very like me</p>
 <p>0 (not at all) – 1 – 2 – 3 – 4 – 5 – 6 – 7 – 8 – 9 – 10 (Constantly)</p>
-<p>These can be thought of as horizontal single choice questions, and there
-are a variety of <strong>Array question</strong> types for them, but the basic
-<strong>Array</strong> is suitable for most cases.</p>
+<p>These can be thought of as horizontal single choice questions, and there are a variety of <strong>Array question</strong> types for them, but the basic <strong>Array</strong> is suitable for most cases. Avoid the predefined Array (5-point) and Array (10-point) options, as they are less flexible.</p>
 <p><img src="media/image48.png" /></p>
-<p><strong>Add a question</strong>, and select the <strong>Array</strong> question type. Name the
-question <strong>Foods</strong>, set the <strong>Question</strong> to ‘How much do you like…’ and
-use <strong>Quick add</strong> to create (and name) five subquestions.</p>
+<p><strong>Add a question</strong>, and select the <strong>Array</strong> question type. Name the question <strong>Foods</strong>, set the <strong>Question</strong> to ‘How much do you like…’ and use <strong>Quick add</strong> to create (and name) five subquestions.</p>
 <p><img src="media/image49.png" /></p>
-<p>Did you remember to avoid a space between the code, semicolon, and
-Subquestion text? If you didn’t, please edit the spaces out before
-proceeding.</p>
-<p>Whenever you have several consecutive items using the same answer scale
-then they can be presented as a matrix to make them easier to answer and
-use less screen space.</p>
-<p>Click Answer options to define a 5 point Likert response scale, with the
-Codes 0 to 4 (you can use Quick add).</p>
+<p>Did you remember to avoid a space between the code, semicolon, and Subquestion text? If you didn’t, please edit the spaces out before proceeding.</p>
+<p>Whenever you have several consecutive items using the same answer scale then they can be presented as a matrix to make them easier to answer and use less screen space.</p>
+<p>Click Answer options to define a 5 point Likert response scale, with the Codes 0 to 4 (you can use Quick add).</p>
 <p><img src="media/image50.png" /></p>
-<p>Using numbers for the codes here can make scoring the data easier later.
-Once again, make sure there are no spaces after the numbers or before
-the Answer options. Save and preview!</p>
-<p>If you are writing a lot of surveys, you can save a frequently used
-scale like this by clicking Save label set. You can then reload it later
-using Load label set.</p>
+<p>Using numbers for the codes here can make scoring the data easier later. Once again, make sure there are no spaces after the numbers or before the Answer options. Save and preview!</p>
+<p>If you are writing a lot of surveys, you can save a frequently used scale like this by clicking Save label set. You can then reload it later using Load label set.</p>
+<p>If you have very long items, you can change the amount of space given to them in the <strong>Display</strong> section, in the <strong>(Sub)-question</strong> <strong>width</strong> box - if you set it to 50, it will take up 50% of the width, leaving the other half for the answer options.</p>
+<p>If you want to control line-breaks in the Answer options or sub-questions, you can add html linebreak commands, e.g., <code>Strongly&lt;/br&gt;Agree.</code></p>
 </div>
 <div id="semantic-differential-questions" class="section level2 hasAnchor" number="5.5">
 <h2><span class="header-section-number">5.5</span> Semantic Differential questions<a href="other-types-of-questions.html#semantic-differential-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Semantic differential questions are those where you put an adjective on
-the left and its opposite on the right, and so rate the same statement
-on several dimensions.</p>
+<p>Semantic differential questions are those where you put an adjective on the left and its opposite on the right, and so rate the same statement on several dimensions.</p>
 <p><img src="media/image51.png" /></p>
-<p>In Limesurvey this is just an Array, but you put the left and right
-labels in the Subquestion text, separated by the vertical bar character
-| . The | might take you some time to locate on your keyboard, but it
-should be there.</p>
+<p>In Limesurvey this is just an Array, but you put the left and right labels in the Subquestion text, separated by the vertical bar character | . The | might take you some time to locate on your keyboard, but it should be there.</p>
 <p><img src="media/image52.png" /></p>
-<p>For the answer options, on separate lines type the values 0 to 10
-(for the Codes) followed by a semicolon, and nothing else.</p>
+<p>For the answer options, on separate lines type the values 0 to 10 (for the Codes) followed by a semicolon, and nothing else.</p>
 <p><img src="media/image53.png" /></p>
 <p>You should end up with an unlabelled semantic differential like this:</p>
 <p><img src="media/image54.png" /></p>
-<p>The alignment of the left hand side is not great; it needs to be
-right-aligned. We can fix this by adding HTML tags to the subquestion
-text.</p>
+<p>The alignment of the left hand side is not great; it needs to be right-aligned. We can fix this by adding HTML tags to the subquestion text.</p>
 <p><img src="media/image55.png" /></p>
 <p><img src="media/image56.png" /></p>
 </div>
@@ -292,70 +245,39 @@ text.</p>
 <h2><span class="header-section-number">5.6</span> Continuous Sliders<a href="other-types-of-questions.html#continuous-sliders" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>An alternative to discrete ordinal Likert scales, sliders provide a continuous rating between two values, a bit like the ‘visual analogue scales’ used in physical questionnaires. These are hidden away under the <strong>Mask question</strong> type <strong>Multiple numerical input.</strong></p>
 <p><img src="media/image57.png" /></p>
-<p>Create a <strong>Multiple numerical input</strong> question called <strong>Slider</strong>, with
-the <strong>question</strong> ‘How much would you pay for…’ and the <strong>Subquestion</strong>
-‘…a bar of chocolate?’</p>
-<p>To make it a slider, open the bottom option on the right hand menu,
-<strong>Slider</strong>. Set <strong>Use slider layout</strong> to On. Set the <strong>minimum</strong> value
-to 0, the <strong>maximum</strong> to 100, and the <strong>accuracy</strong> to 1. Turn On the
-<strong>Display slider min and max value.</strong></p>
+<p>Create a <strong>Multiple numerical input</strong> question called <strong>Slider</strong>, with the <strong>question</strong> ‘How much would you pay for…’ and the <strong>Subquestion</strong> ‘…a bar of chocolate?’</p>
+<p>To make it a slider, open the bottom option on the right hand menu, <strong>Slider</strong>. Set <strong>Use slider layout</strong> to On. Set the <strong>minimum</strong> value to 0, the <strong>maximum</strong> to 100, and the <strong>accuracy</strong> to 1. Turn On the <strong>Display slider min and max value.</strong></p>
 <p><img src="media/image58.png" /> s</p>
 <p>You can now add more items as different subquestions</p>
 <p><img src="media/image59.png" /></p>
 </div>
 <div id="adding-images-or-movies" class="section level2 hasAnchor" number="5.7">
 <h2><span class="header-section-number">5.7</span> Adding Images or Movies<a href="other-types-of-questions.html#adding-images-or-movies" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you ever need to add an image or movie to a question (or to Text)
-then there are three buttons on the toolbar that allow you to do this.
-They either need to be stored elsewhere on the internet (so you can
-provide a URL) or you can upload them to psyserver. For example, adding
-a simple image can be done by clicking the
-<img src="media/image16.png" /> button. In the dialog that
-appears, click <strong>Browse Server</strong> to get the
-<img src="media/image17.png" /> option and find a file on
-your computer to upload:</p>
+<p>If you ever need to add an image or movie to a question (or to Text) then there are three buttons on the toolbar that allow you to do this. They either need to be stored elsewhere on the internet (so you can provide a URL) or you can upload them to psyserver. For example, adding a simple image can be done by clicking the <img src="media/image16.png" /> button. In the dialog that appears, click <strong>Browse Server</strong> to get the <img src="media/image17.png" /> option and find a file on your computer to upload:</p>
 <p><img src="media/image18.png" style="width:50.0%" /></p>
 <p><img src="media/image19.png" style="width:50.0%" /></p>
-<p>To select the image you have uploaded, double-click it. Depending on its
-size, it might not all show in the preview box of the Image dialog, so
-you can enter a sensible display width or height (the other will be
-calculated):</p>
+<p>To select the image you have uploaded, double-click it. Depending on its size, it might not all show in the preview box of the Image dialog, so you can enter a sensible display width or height (the other will be calculated):</p>
 <p><img src="media/image20.png" style="width:50.0%" /></p>
-<p>When you have added a picture to the top of your Information Text,
-click the green <strong>Save</strong> button and then
-<strong>preview</strong> <strong>question</strong>.</p>
+<p>When you have added a picture to the top of your Information Text, click the green <strong>Save</strong> button and then <strong>preview</strong> <strong>question</strong>.</p>
 <p><img src="media/image21.png" /></p>
 <p>You can also add images, and I suppose videos, to the text for Questions, Subquestions and Answer options, using the pencil icon at the right of the space for entering text to open the HTML editor.</p>
 </div>
 <div id="duplicating-questions" class="section level2 hasAnchor" number="5.8">
 <h2><span class="header-section-number">5.8</span> Duplicating questions<a href="other-types-of-questions.html#duplicating-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Often your surveys will consist of lots of similar questions. You can
-save time by getting one question exactly the way you want it, and then
-duplicating it, so all you have to do is edit the content.</p>
-<p>For example, the Slider question had a lot of settings which would take
-time to replicate. If you wanted to ask a slightly different question
-using a slider, you could replicate it and just change the question
-text.</p>
-<p>Hover over the Slider question and click the <strong>three dots</strong> that appear
-to the right, and select <strong>Copy</strong> to duplicate it.</p>
+<p>Often your surveys will consist of lots of similar questions. You can save time by getting one question exactly the way you want it, and then duplicating it, so all you have to do is edit the content.</p>
+<p>For example, the Slider question had a lot of settings which would take time to replicate. If you wanted to ask a slightly different question using a slider, you could replicate it and just change the question text.</p>
+<p>Hover over the Slider question and click the <strong>three dots</strong> that appear to the right, and select <strong>Copy</strong> to duplicate it.</p>
 <p><img src="media/image60.png" /></p>
-<p>Notice that you have options about what to copy over. Leave them all as
-<strong>Yes</strong>, and click <strong>Save and close</strong>. Edit the SliderCopy question and
-change the question to ‘How long would it take you to eat…’.</p>
+<p>Notice that you have options about what to copy over. Leave them all as <strong>Yes</strong>, and click <strong>Save and close</strong>. Edit the SliderCopy question and change the question to ‘How long would it take you to eat…’.</p>
 </div>
 <div id="saving-lists-of-subquestions-and-answer-options-for-reuse" class="section level2 hasAnchor" number="5.9">
 <h2><span class="header-section-number">5.9</span> Saving lists of subquestions and answer options for reuse<a href="other-types-of-questions.html#saving-lists-of-subquestions-and-answer-options-for-reuse" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Make a copy of Breakfast, name it Favourite, and turn it into a Single
-choice question <strong>List (radio)</strong>. Oh no, all the sub-questions have
-vanished! Save and close.</p>
-<p>Return to Breakfast and <strong>Edit</strong> it. Click <strong>Save Label set</strong> underneath
-the subquestions – choose <strong>New label set</strong> and name it breakfast items.</p>
+<p>Make a copy of Breakfast, name it Favourite, and turn it into a Single choice question <strong>List (radio)</strong>. Oh no, all the sub-questions have vanished! Save and close.</p>
+<p>Return to Breakfast and <strong>Edit</strong> it. Click <strong>Save Label set</strong> underneath the subquestions – choose <strong>New label set</strong> and name it breakfast items.</p>
 <p><img src="media/image70.png" /></p>
-<p>Return to Favourite, and click <strong>Load label set</strong>, then select breakfast
-items (the example here shows other label sets I’ve saved previously.</p>
+<p>Return to Favourite, and click <strong>Load label set</strong>, then select breakfast items (the example here shows other label sets I’ve saved previously.</p>
 <p><img src="media/image71.png" /></p>
-<p>The Answer options should be filled with the list you had saved. Save
-and preview.</p>
+<p>The Answer options should be filled with the list you had saved. Save and preview.</p>
 <p><img src="media/image72.png" /></p>
 
 </div>
@@ -408,7 +330,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["_main.pdf"],
 "search": {
 "engine": "fuse",
 "options": null
